@@ -19,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='dfx.proto.general',
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\007General\370\001\001',
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\rgeneral.proto\x12\x11\x64\x66x.proto.general\x1a\x1cgoogle/protobuf/struct.proto\"\x0f\n\rStatusRequest\"\xed\x01\n\x0eStatusResponse\x12\x10\n\x08StatusID\x18\x01 \x01(\t\x12\x0f\n\x07Version\x18\x02 \x01(\t\x12;\n\x05Notes\x18\x03 \x03(\x0b\x32,.dfx.proto.general.StatusResponse.NotesEntry\x1a%\n\x04Note\x12\x0c\n\x04\x44\x61te\x18\x01 \x01(\r\x12\x0f\n\x07Message\x18\x02 \x01(\t\x1aT\n\nNotesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x35\n\x05value\x18\x02 \x01(\x0b\x32&.dfx.proto.general.StatusResponse.Note:\x02\x38\x01\"\x12\n\x10MimeTypesRequest\"\x86\x01\n\x11MimeTypesResponse\x12=\n\x06Values\x18\x01 \x03(\x0b\x32-.dfx.proto.general.MimeTypesResponse.MimeType\x1a\x32\n\x08MimeType\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x0c\n\x04Mime\x18\x03 \x01(\t\"$\n\x14HeartbeatReadRequest\x12\x0c\n\x04UUID\x18\x01 \x01(\t\";\n\x15HeartbeatReadResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x11\n\ttimestamp\x18\x02 \x01(\t\"3\n\x15HeartbeatWriteRequest\x12\x0c\n\x04UUID\x18\x01 \x01(\t\x12\x0c\n\x04Mode\x18\x02 \x01(\t\"Q\n\x16HeartbeatWriteResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12&\n\x05stats\x18\x02 \x01(\x0b\x32\x17.google.protobuf.Struct2\xb5\x01\n\x08Services\x12O\n\x06Status\x12 .dfx.proto.general.StatusRequest\x1a!.dfx.proto.general.StatusResponse\"\x00\x12X\n\tMimeTypes\x12#.dfx.proto.general.MimeTypesRequest\x1a$.dfx.proto.general.MimeTypesResponse\"\x00\x42\x1e\n\x10\x61i.nuralogix.dfxB\x07General\xf8\x01\x01\x62\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,])
@@ -32,6 +33,7 @@ _STATUSREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -56,6 +58,7 @@ _STATUSRESPONSE_NOTE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Date', full_name='dfx.proto.general.StatusResponse.Note.Date', index=0,
@@ -63,14 +66,14 @@ _STATUSRESPONSE_NOTE = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Message', full_name='dfx.proto.general.StatusResponse.Note.Message', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -93,6 +96,7 @@ _STATUSRESPONSE_NOTESENTRY = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='key', full_name='dfx.proto.general.StatusResponse.NotesEntry.key', index=0,
@@ -100,14 +104,14 @@ _STATUSRESPONSE_NOTESENTRY = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='dfx.proto.general.StatusResponse.NotesEntry.value', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -130,6 +134,7 @@ _STATUSRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='StatusID', full_name='dfx.proto.general.StatusResponse.StatusID', index=0,
@@ -137,21 +142,21 @@ _STATUSRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.general.StatusResponse.Version', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Notes', full_name='dfx.proto.general.StatusResponse.Notes', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -175,6 +180,7 @@ _MIMETYPESREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -199,6 +205,7 @@ _MIMETYPESRESPONSE_MIMETYPE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.general.MimeTypesResponse.MimeType.ID', index=0,
@@ -206,21 +213,21 @@ _MIMETYPESRESPONSE_MIMETYPE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.general.MimeTypesResponse.MimeType.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Mime', full_name='dfx.proto.general.MimeTypesResponse.MimeType.Mime', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -243,6 +250,7 @@ _MIMETYPESRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.general.MimeTypesResponse.Values', index=0,
@@ -250,7 +258,7 @@ _MIMETYPESRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -274,6 +282,7 @@ _HEARTBEATREADREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='UUID', full_name='dfx.proto.general.HeartbeatReadRequest.UUID', index=0,
@@ -281,7 +290,7 @@ _HEARTBEATREADREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -305,6 +314,7 @@ _HEARTBEATREADRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='success', full_name='dfx.proto.general.HeartbeatReadResponse.success', index=0,
@@ -312,14 +322,14 @@ _HEARTBEATREADRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='timestamp', full_name='dfx.proto.general.HeartbeatReadResponse.timestamp', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -343,6 +353,7 @@ _HEARTBEATWRITEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='UUID', full_name='dfx.proto.general.HeartbeatWriteRequest.UUID', index=0,
@@ -350,14 +361,14 @@ _HEARTBEATWRITEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Mode', full_name='dfx.proto.general.HeartbeatWriteRequest.Mode', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -381,6 +392,7 @@ _HEARTBEATWRITERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='success', full_name='dfx.proto.general.HeartbeatWriteResponse.success', index=0,
@@ -388,14 +400,14 @@ _HEARTBEATWRITERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='stats', full_name='dfx.proto.general.HeartbeatWriteResponse.stats', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -519,6 +531,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_start=716,
   serialized_end=897,
   methods=[
@@ -530,6 +543,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_STATUSREQUEST,
     output_type=_STATUSRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='MimeTypes',
@@ -539,6 +553,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_MIMETYPESREQUEST,
     output_type=_MIMETYPESRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_SERVICES)

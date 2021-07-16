@@ -18,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='dfx.proto.profiles',
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\010Profiles\370\001\001',
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x0eprofiles.proto\x12\x12\x64\x66x.proto.profiles\",\n\rCreateRequest\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\r\n\x05\x45mail\x18\x02 \x01(\t\"\x1c\n\x0e\x43reateResponse\x12\n\n\x02ID\x18\x01 \x01(\t\"\x96\x01\n\rUpdateRequest\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\r\n\x05\x45mail\x18\x02 \x01(\t\x12\x0e\n\x06Status\x18\x03 \x01(\t\x12=\n\x06Params\x18\x04 \x01(\x0b\x32-.dfx.proto.profiles.UpdateRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eUpdateResponse\"m\n\x0fRetrieveRequest\x12?\n\x06Params\x18\x01 \x01(\x0b\x32/.dfx.proto.profiles.RetrieveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"a\n\x10RetrieveResponse\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\r\n\x05\x45mail\x18\x02 \x01(\t\x12\x0e\n\x06Status\x18\x03 \x01(\t\x12\x0f\n\x07\x43reated\x18\x04 \x01(\r\x12\x0f\n\x07Updated\x18\x05 \x01(\r\"i\n\rRemoveRequest\x12=\n\x06Params\x18\x01 \x01(\x0b\x32-.dfx.proto.profiles.RemoveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eRemoveResponse\"\xa3\x01\n\x0bListRequest\x12:\n\x05Query\x18\x01 \x01(\x0b\x32+.dfx.proto.profiles.ListRequest.QueryValues\x1aX\n\x0bQueryValues\x12\r\n\x05Limit\x18\x01 \x01(\r\x12\x0e\n\x06Offset\x18\x02 \x01(\r\x12\x17\n\x0fUserProfileName\x18\x03 \x01(\t\x12\x11\n\tUserEmail\x18\x04 \x01(\t\"\xae\x01\n\x0cListResponse\x12\x38\n\x06Values\x18\x01 \x03(\x0b\x32(.dfx.proto.profiles.ListResponse.Profile\x1a\x64\n\x07Profile\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\r\n\x05\x45mail\x18\x03 \x01(\t\x12\x0e\n\x06Status\x18\x04 \x01(\t\x12\x0f\n\x07\x43reated\x18\x05 \x01(\r\x12\x0f\n\x07Updated\x18\x06 \x01(\r\"\xfa\x01\n\x11ListByUserRequest\x12\x41\n\x06Params\x18\x01 \x01(\x0b\x32\x31.dfx.proto.profiles.ListByUserRequest.ParamValues\x12@\n\x05Query\x18\x02 \x01(\x0b\x32\x31.dfx.proto.profiles.ListByUserRequest.QueryValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x1a\x45\n\x0bQueryValues\x12\r\n\x05Limit\x18\x01 \x01(\r\x12\x0e\n\x06Offset\x18\x02 \x01(\r\x12\x17\n\x0fUserProfileName\x18\x03 \x01(\t\"\xba\x01\n\x12ListByUserResponse\x12>\n\x06Values\x18\x01 \x03(\x0b\x32..dfx.proto.profiles.ListByUserResponse.Profile\x1a\x64\n\x07Profile\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\r\n\x05\x45mail\x18\x03 \x01(\t\x12\x0e\n\x06Status\x18\x04 \x01(\t\x12\x0f\n\x07\x43reated\x18\x05 \x01(\r\x12\x0f\n\x07Updated\x18\x06 \x01(\r2\x88\x04\n\x08Services\x12Q\n\x06\x43reate\x12!.dfx.proto.profiles.CreateRequest\x1a\".dfx.proto.profiles.CreateResponse\"\x00\x12W\n\x08Retrieve\x12#.dfx.proto.profiles.RetrieveRequest\x1a$.dfx.proto.profiles.RetrieveResponse\"\x00\x12Q\n\x06Update\x12!.dfx.proto.profiles.UpdateRequest\x1a\".dfx.proto.profiles.UpdateResponse\"\x00\x12Q\n\x06Remove\x12!.dfx.proto.profiles.RemoveRequest\x1a\".dfx.proto.profiles.RemoveResponse\"\x00\x12K\n\x04List\x12\x1f.dfx.proto.profiles.ListRequest\x1a .dfx.proto.profiles.ListResponse\"\x00\x12]\n\nListByUser\x12%.dfx.proto.profiles.ListByUserRequest\x1a&.dfx.proto.profiles.ListByUserResponse\"\x00\x42\x1f\n\x10\x61i.nuralogix.dfxB\x08Profiles\xf8\x01\x01\x62\x06proto3'
 )
 
@@ -30,6 +31,7 @@ _CREATEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.profiles.CreateRequest.Name', index=0,
@@ -37,14 +39,14 @@ _CREATEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Email', full_name='dfx.proto.profiles.CreateRequest.Email', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -68,6 +70,7 @@ _CREATERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.profiles.CreateResponse.ID', index=0,
@@ -75,7 +78,7 @@ _CREATERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -99,6 +102,7 @@ _UPDATEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.profiles.UpdateRequest.ParamValues.ID', index=0,
@@ -106,7 +110,7 @@ _UPDATEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -129,6 +133,7 @@ _UPDATEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.profiles.UpdateRequest.Name', index=0,
@@ -136,28 +141,28 @@ _UPDATEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Email', full_name='dfx.proto.profiles.UpdateRequest.Email', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Status', full_name='dfx.proto.profiles.UpdateRequest.Status', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.profiles.UpdateRequest.Params', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -181,6 +186,7 @@ _UPDATERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -205,6 +211,7 @@ _RETRIEVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.profiles.RetrieveRequest.ParamValues.ID', index=0,
@@ -212,7 +219,7 @@ _RETRIEVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -235,6 +242,7 @@ _RETRIEVEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.profiles.RetrieveRequest.Params', index=0,
@@ -242,7 +250,7 @@ _RETRIEVEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -266,6 +274,7 @@ _RETRIEVERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.profiles.RetrieveResponse.Name', index=0,
@@ -273,35 +282,35 @@ _RETRIEVERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Email', full_name='dfx.proto.profiles.RetrieveResponse.Email', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Status', full_name='dfx.proto.profiles.RetrieveResponse.Status', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Created', full_name='dfx.proto.profiles.RetrieveResponse.Created', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Updated', full_name='dfx.proto.profiles.RetrieveResponse.Updated', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -325,6 +334,7 @@ _REMOVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.profiles.RemoveRequest.ParamValues.ID', index=0,
@@ -332,7 +342,7 @@ _REMOVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -355,6 +365,7 @@ _REMOVEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.profiles.RemoveRequest.Params', index=0,
@@ -362,7 +373,7 @@ _REMOVEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -386,6 +397,7 @@ _REMOVERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -410,6 +422,7 @@ _LISTREQUEST_QUERYVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Limit', full_name='dfx.proto.profiles.ListRequest.QueryValues.Limit', index=0,
@@ -417,28 +430,28 @@ _LISTREQUEST_QUERYVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Offset', full_name='dfx.proto.profiles.ListRequest.QueryValues.Offset', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='UserProfileName', full_name='dfx.proto.profiles.ListRequest.QueryValues.UserProfileName', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='UserEmail', full_name='dfx.proto.profiles.ListRequest.QueryValues.UserEmail', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -461,6 +474,7 @@ _LISTREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Query', full_name='dfx.proto.profiles.ListRequest.Query', index=0,
@@ -468,7 +482,7 @@ _LISTREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -492,6 +506,7 @@ _LISTRESPONSE_PROFILE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.profiles.ListResponse.Profile.ID', index=0,
@@ -499,42 +514,42 @@ _LISTRESPONSE_PROFILE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.profiles.ListResponse.Profile.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Email', full_name='dfx.proto.profiles.ListResponse.Profile.Email', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Status', full_name='dfx.proto.profiles.ListResponse.Profile.Status', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Created', full_name='dfx.proto.profiles.ListResponse.Profile.Created', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Updated', full_name='dfx.proto.profiles.ListResponse.Profile.Updated', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -557,6 +572,7 @@ _LISTRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.profiles.ListResponse.Values', index=0,
@@ -564,7 +580,7 @@ _LISTRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -588,6 +604,7 @@ _LISTBYUSERREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.profiles.ListByUserRequest.ParamValues.ID', index=0,
@@ -595,7 +612,7 @@ _LISTBYUSERREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -618,6 +635,7 @@ _LISTBYUSERREQUEST_QUERYVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Limit', full_name='dfx.proto.profiles.ListByUserRequest.QueryValues.Limit', index=0,
@@ -625,21 +643,21 @@ _LISTBYUSERREQUEST_QUERYVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Offset', full_name='dfx.proto.profiles.ListByUserRequest.QueryValues.Offset', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='UserProfileName', full_name='dfx.proto.profiles.ListByUserRequest.QueryValues.UserProfileName', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -662,6 +680,7 @@ _LISTBYUSERREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.profiles.ListByUserRequest.Params', index=0,
@@ -669,14 +688,14 @@ _LISTBYUSERREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Query', full_name='dfx.proto.profiles.ListByUserRequest.Query', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -700,6 +719,7 @@ _LISTBYUSERRESPONSE_PROFILE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.profiles.ListByUserResponse.Profile.ID', index=0,
@@ -707,42 +727,42 @@ _LISTBYUSERRESPONSE_PROFILE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.profiles.ListByUserResponse.Profile.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Email', full_name='dfx.proto.profiles.ListByUserResponse.Profile.Email', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Status', full_name='dfx.proto.profiles.ListByUserResponse.Profile.Status', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Created', full_name='dfx.proto.profiles.ListByUserResponse.Profile.Created', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Updated', full_name='dfx.proto.profiles.ListByUserResponse.Profile.Updated', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -765,6 +785,7 @@ _LISTBYUSERRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.profiles.ListByUserResponse.Values', index=0,
@@ -772,7 +793,7 @@ _LISTBYUSERRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -976,6 +997,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_start=1406,
   serialized_end=1926,
   methods=[
@@ -987,6 +1009,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_CREATEREQUEST,
     output_type=_CREATERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Retrieve',
@@ -996,6 +1019,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_RETRIEVEREQUEST,
     output_type=_RETRIEVERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Update',
@@ -1005,6 +1029,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_UPDATEREQUEST,
     output_type=_UPDATERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Remove',
@@ -1014,6 +1039,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_REMOVEREQUEST,
     output_type=_REMOVERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='List',
@@ -1023,6 +1049,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_LISTREQUEST,
     output_type=_LISTRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='ListByUser',
@@ -1032,6 +1059,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_LISTBYUSERREQUEST,
     output_type=_LISTBYUSERRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_SERVICES)

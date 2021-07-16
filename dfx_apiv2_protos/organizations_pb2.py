@@ -18,7 +18,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='dfx.proto.organizations',
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\rOrganizations\370\001\001',
-  serialized_pb=b'\n\x13organizations.proto\x12\x17\x64\x66x.proto.organizations\"\x11\n\x0fRetrieveRequest\"r\n\x10RetrieveResponse\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x12\n\nIdentifier\x18\x03 \x01(\t\x12\x0e\n\x06Status\x18\x04 \x01(\t\x12\x0f\n\x07\x43reated\x18\x05 \x01(\r\x12\x0f\n\x07Updated\x18\x06 \x01(\r\"k\n\x04User\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x11\n\tFirstName\x18\x02 \x01(\t\x12\x10\n\x08LastName\x18\x03 \x01(\t\x12\r\n\x05\x45mail\x18\x04 \x01(\t\x12\x0e\n\x06Gender\x18\x05 \x01(\t\x12\x13\n\x0b\x44\x61teOfBirth\x18\x06 \x01(\t\"\x0e\n\x0cUsersRequest\"=\n\rUsersResponse\x12,\n\x05users\x18\x01 \x03(\x0b\x32\x1d.dfx.proto.organizations.User\"n\n\x16RegisterLicenseRequest\x12\x0b\n\x03Key\x18\x01 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x02 \x01(\t\x12\x0c\n\x04Name\x18\x03 \x01(\t\x12\x12\n\nIdentifier\x18\x04 \x01(\t\x12\x0f\n\x07Version\x18\x05 \x01(\t\":\n\x17RegisterLicenseResponse\x12\x10\n\x08\x44\x65viceID\x18\x01 \x01(\t\x12\r\n\x05Token\x18\x02 \x01(\t\"9\n\x18UnregisterLicenseRequest\x12\x0b\n\x03Key\x18\x01 \x01(\t\x12\x10\n\x08\x44\x65viceID\x18\x02 \x01(\t\"\x1b\n\x19UnregisterLicenseResponse\"z\n\x13RetrieveLogoRequest\x12H\n\x06Params\x18\x01 \x01(\x0b\x32\x38.dfx.proto.organizations.RetrieveLogoRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"$\n\x14RetrieveLogoResponse\x12\x0c\n\x04\x44\x61ta\x18\x01 \x01(\x0c\"\x7f\n\x14GenerateTokenRequest\x12\x0e\n\x06UserID\x18\x01 \x01(\t\x12\x16\n\x0eOrganizationID\x18\x02 \x01(\t\x12\x10\n\x08\x44\x65viceID\x18\x03 \x01(\t\x12\x0e\n\x06RoleID\x18\x04 \x01(\t\x12\x0c\n\x04Name\x18\x05 \x01(\t\x12\x0f\n\x07\x45xpires\x18\x06 \x01(\r\"&\n\x15GenerateTokenResponse\x12\r\n\x05Token\x18\x01 \x01(\t2\x9e\x05\n\x08Services\x12\x61\n\x08Retrieve\x12(.dfx.proto.organizations.RetrieveRequest\x1a).dfx.proto.organizations.RetrieveResponse\"\x00\x12X\n\x05Users\x12%.dfx.proto.organizations.UsersRequest\x1a&.dfx.proto.organizations.UsersResponse\"\x00\x12v\n\x0fRegisterLicense\x12/.dfx.proto.organizations.RegisterLicenseRequest\x1a\x30.dfx.proto.organizations.RegisterLicenseResponse\"\x00\x12|\n\x11UnregisterLicense\x12\x31.dfx.proto.organizations.UnregisterLicenseRequest\x1a\x32.dfx.proto.organizations.UnregisterLicenseResponse\"\x00\x12m\n\x0cRetrieveLogo\x12,.dfx.proto.organizations.RetrieveLogoRequest\x1a-.dfx.proto.organizations.RetrieveLogoResponse\"\x00\x12p\n\rGenerateToken\x12-.dfx.proto.organizations.GenerateTokenRequest\x1a..dfx.proto.organizations.GenerateTokenResponse\"\x00\x42$\n\x10\x61i.nuralogix.dfxB\rOrganizations\xf8\x01\x01\x62\x06proto3'
+  create_key=_descriptor._internal_create_key,
+  serialized_pb=b'\n\x13organizations.proto\x12\x17\x64\x66x.proto.organizations\"\x11\n\x0fRetrieveRequest\"l\n\nOrgAddress\x12\r\n\x05Line1\x18\x01 \x01(\t\x12\r\n\x05Line2\x18\x02 \x01(\t\x12\x0c\n\x04\x43ity\x18\x03 \x01(\t\x12\r\n\x05State\x18\x04 \x01(\t\x12\x0f\n\x07\x43ountry\x18\x05 \x01(\t\x12\x12\n\nPostalCode\x18\x06 \x01(\t\"\xcd\x01\n\x10RetrieveResponse\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x12\n\nIdentifier\x18\x03 \x01(\t\x12\x0e\n\x06Status\x18\x04 \x01(\t\x12\x0f\n\x07\x43reated\x18\x05 \x01(\r\x12\x0f\n\x07Updated\x18\x06 \x01(\r\x12\r\n\x05\x45mail\x18\x07 \x01(\t\x12\x0f\n\x07\x43ontact\x18\x08 \x01(\t\x12\x39\n\x0cOrgAddresses\x18\t \x03(\x0b\x32#.dfx.proto.organizations.OrgAddress\"k\n\x04User\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x11\n\tFirstName\x18\x02 \x01(\t\x12\x10\n\x08LastName\x18\x03 \x01(\t\x12\r\n\x05\x45mail\x18\x04 \x01(\t\x12\x0e\n\x06Gender\x18\x05 \x01(\t\x12\x13\n\x0b\x44\x61teOfBirth\x18\x06 \x01(\t\"\x0e\n\x0cUsersRequest\"=\n\rUsersResponse\x12,\n\x05users\x18\x01 \x03(\x0b\x32\x1d.dfx.proto.organizations.User\"n\n\x16RegisterLicenseRequest\x12\x0b\n\x03Key\x18\x01 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x02 \x01(\t\x12\x0c\n\x04Name\x18\x03 \x01(\t\x12\x12\n\nIdentifier\x18\x04 \x01(\t\x12\x0f\n\x07Version\x18\x05 \x01(\t\":\n\x17RegisterLicenseResponse\x12\x10\n\x08\x44\x65viceID\x18\x01 \x01(\t\x12\r\n\x05Token\x18\x02 \x01(\t\"9\n\x18UnregisterLicenseRequest\x12\x0b\n\x03Key\x18\x01 \x01(\t\x12\x10\n\x08\x44\x65viceID\x18\x02 \x01(\t\"\x1b\n\x19UnregisterLicenseResponse\"z\n\x13RetrieveLogoRequest\x12H\n\x06Params\x18\x01 \x01(\x0b\x32\x38.dfx.proto.organizations.RetrieveLogoRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"$\n\x14RetrieveLogoResponse\x12\x0c\n\x04\x44\x61ta\x18\x01 \x01(\x0c\"\x7f\n\x14GenerateTokenRequest\x12\x0e\n\x06UserID\x18\x01 \x01(\t\x12\x16\n\x0eOrganizationID\x18\x02 \x01(\t\x12\x10\n\x08\x44\x65viceID\x18\x03 \x01(\t\x12\x0e\n\x06RoleID\x18\x04 \x01(\t\x12\x0c\n\x04Name\x18\x05 \x01(\t\x12\x0f\n\x07\x45xpires\x18\x06 \x01(\r\"&\n\x15GenerateTokenResponse\x12\r\n\x05Token\x18\x01 \x01(\t\"&\n\x15LoginWithTokenRequest\x12\r\n\x05Token\x18\x01 \x01(\t\"\'\n\x16LoginWithTokenResponse\x12\r\n\x05Token\x18\x01 \x01(\t2\x93\x06\n\x08Services\x12\x61\n\x08Retrieve\x12(.dfx.proto.organizations.RetrieveRequest\x1a).dfx.proto.organizations.RetrieveResponse\"\x00\x12X\n\x05Users\x12%.dfx.proto.organizations.UsersRequest\x1a&.dfx.proto.organizations.UsersResponse\"\x00\x12v\n\x0fRegisterLicense\x12/.dfx.proto.organizations.RegisterLicenseRequest\x1a\x30.dfx.proto.organizations.RegisterLicenseResponse\"\x00\x12|\n\x11UnregisterLicense\x12\x31.dfx.proto.organizations.UnregisterLicenseRequest\x1a\x32.dfx.proto.organizations.UnregisterLicenseResponse\"\x00\x12m\n\x0cRetrieveLogo\x12,.dfx.proto.organizations.RetrieveLogoRequest\x1a-.dfx.proto.organizations.RetrieveLogoResponse\"\x00\x12p\n\rGenerateToken\x12-.dfx.proto.organizations.GenerateTokenRequest\x1a..dfx.proto.organizations.GenerateTokenResponse\"\x00\x12s\n\x0eLoginWithToken\x12..dfx.proto.organizations.LoginWithTokenRequest\x1a/.dfx.proto.organizations.LoginWithTokenResponse\"\x00\x42$\n\x10\x61i.nuralogix.dfxB\rOrganizations\xf8\x01\x01\x62\x06proto3'
 )
 
 
@@ -30,6 +31,7 @@ _RETRIEVEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -48,55 +50,56 @@ _RETRIEVEREQUEST = _descriptor.Descriptor(
 )
 
 
-_RETRIEVERESPONSE = _descriptor.Descriptor(
-  name='RetrieveResponse',
-  full_name='dfx.proto.organizations.RetrieveResponse',
+_ORGADDRESS = _descriptor.Descriptor(
+  name='OrgAddress',
+  full_name='dfx.proto.organizations.OrgAddress',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ID', full_name='dfx.proto.organizations.RetrieveResponse.ID', index=0,
+      name='Line1', full_name='dfx.proto.organizations.OrgAddress.Line1', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Name', full_name='dfx.proto.organizations.RetrieveResponse.Name', index=1,
+      name='Line2', full_name='dfx.proto.organizations.OrgAddress.Line2', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Identifier', full_name='dfx.proto.organizations.RetrieveResponse.Identifier', index=2,
+      name='City', full_name='dfx.proto.organizations.OrgAddress.City', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Status', full_name='dfx.proto.organizations.RetrieveResponse.Status', index=3,
+      name='State', full_name='dfx.proto.organizations.OrgAddress.State', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Created', full_name='dfx.proto.organizations.RetrieveResponse.Created', index=4,
-      number=5, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
+      name='Country', full_name='dfx.proto.organizations.OrgAddress.Country', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='Updated', full_name='dfx.proto.organizations.RetrieveResponse.Updated', index=5,
-      number=6, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
+      name='PostalCode', full_name='dfx.proto.organizations.OrgAddress.PostalCode', index=5,
+      number=6, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -110,7 +113,95 @@ _RETRIEVERESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=67,
-  serialized_end=181,
+  serialized_end=175,
+)
+
+
+_RETRIEVERESPONSE = _descriptor.Descriptor(
+  name='RetrieveResponse',
+  full_name='dfx.proto.organizations.RetrieveResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='ID', full_name='dfx.proto.organizations.RetrieveResponse.ID', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Name', full_name='dfx.proto.organizations.RetrieveResponse.Name', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Identifier', full_name='dfx.proto.organizations.RetrieveResponse.Identifier', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Status', full_name='dfx.proto.organizations.RetrieveResponse.Status', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Created', full_name='dfx.proto.organizations.RetrieveResponse.Created', index=4,
+      number=5, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Updated', full_name='dfx.proto.organizations.RetrieveResponse.Updated', index=5,
+      number=6, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Email', full_name='dfx.proto.organizations.RetrieveResponse.Email', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Contact', full_name='dfx.proto.organizations.RetrieveResponse.Contact', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='OrgAddresses', full_name='dfx.proto.organizations.RetrieveResponse.OrgAddresses', index=8,
+      number=9, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=178,
+  serialized_end=383,
 )
 
 
@@ -120,6 +211,7 @@ _USER = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.organizations.User.ID', index=0,
@@ -127,42 +219,42 @@ _USER = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FirstName', full_name='dfx.proto.organizations.User.FirstName', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='LastName', full_name='dfx.proto.organizations.User.LastName', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Email', full_name='dfx.proto.organizations.User.Email', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Gender', full_name='dfx.proto.organizations.User.Gender', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DateOfBirth', full_name='dfx.proto.organizations.User.DateOfBirth', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -175,8 +267,8 @@ _USER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=183,
-  serialized_end=290,
+  serialized_start=385,
+  serialized_end=492,
 )
 
 
@@ -186,6 +278,7 @@ _USERSREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -199,8 +292,8 @@ _USERSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=292,
-  serialized_end=306,
+  serialized_start=494,
+  serialized_end=508,
 )
 
 
@@ -210,6 +303,7 @@ _USERSRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='users', full_name='dfx.proto.organizations.UsersResponse.users', index=0,
@@ -217,7 +311,7 @@ _USERSRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -230,8 +324,8 @@ _USERSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=308,
-  serialized_end=369,
+  serialized_start=510,
+  serialized_end=571,
 )
 
 
@@ -241,6 +335,7 @@ _REGISTERLICENSEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Key', full_name='dfx.proto.organizations.RegisterLicenseRequest.Key', index=0,
@@ -248,35 +343,35 @@ _REGISTERLICENSEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DeviceTypeID', full_name='dfx.proto.organizations.RegisterLicenseRequest.DeviceTypeID', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.organizations.RegisterLicenseRequest.Name', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Identifier', full_name='dfx.proto.organizations.RegisterLicenseRequest.Identifier', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.organizations.RegisterLicenseRequest.Version', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -289,8 +384,8 @@ _REGISTERLICENSEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=371,
-  serialized_end=481,
+  serialized_start=573,
+  serialized_end=683,
 )
 
 
@@ -300,6 +395,7 @@ _REGISTERLICENSERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='DeviceID', full_name='dfx.proto.organizations.RegisterLicenseResponse.DeviceID', index=0,
@@ -307,14 +403,14 @@ _REGISTERLICENSERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Token', full_name='dfx.proto.organizations.RegisterLicenseResponse.Token', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -327,8 +423,8 @@ _REGISTERLICENSERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=483,
-  serialized_end=541,
+  serialized_start=685,
+  serialized_end=743,
 )
 
 
@@ -338,6 +434,7 @@ _UNREGISTERLICENSEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Key', full_name='dfx.proto.organizations.UnregisterLicenseRequest.Key', index=0,
@@ -345,14 +442,14 @@ _UNREGISTERLICENSEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DeviceID', full_name='dfx.proto.organizations.UnregisterLicenseRequest.DeviceID', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -365,8 +462,8 @@ _UNREGISTERLICENSEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=543,
-  serialized_end=600,
+  serialized_start=745,
+  serialized_end=802,
 )
 
 
@@ -376,6 +473,7 @@ _UNREGISTERLICENSERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -389,8 +487,8 @@ _UNREGISTERLICENSERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=602,
-  serialized_end=629,
+  serialized_start=804,
+  serialized_end=831,
 )
 
 
@@ -400,6 +498,7 @@ _RETRIEVELOGOREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.organizations.RetrieveLogoRequest.ParamValues.ID', index=0,
@@ -407,7 +506,7 @@ _RETRIEVELOGOREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -420,8 +519,8 @@ _RETRIEVELOGOREQUEST_PARAMVALUES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=728,
-  serialized_end=753,
+  serialized_start=930,
+  serialized_end=955,
 )
 
 _RETRIEVELOGOREQUEST = _descriptor.Descriptor(
@@ -430,6 +529,7 @@ _RETRIEVELOGOREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.organizations.RetrieveLogoRequest.Params', index=0,
@@ -437,7 +537,7 @@ _RETRIEVELOGOREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -450,8 +550,8 @@ _RETRIEVELOGOREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=631,
-  serialized_end=753,
+  serialized_start=833,
+  serialized_end=955,
 )
 
 
@@ -461,6 +561,7 @@ _RETRIEVELOGORESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Data', full_name='dfx.proto.organizations.RetrieveLogoResponse.Data', index=0,
@@ -468,7 +569,7 @@ _RETRIEVELOGORESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -481,8 +582,8 @@ _RETRIEVELOGORESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=755,
-  serialized_end=791,
+  serialized_start=957,
+  serialized_end=993,
 )
 
 
@@ -492,6 +593,7 @@ _GENERATETOKENREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='UserID', full_name='dfx.proto.organizations.GenerateTokenRequest.UserID', index=0,
@@ -499,42 +601,42 @@ _GENERATETOKENREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='OrganizationID', full_name='dfx.proto.organizations.GenerateTokenRequest.OrganizationID', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DeviceID', full_name='dfx.proto.organizations.GenerateTokenRequest.DeviceID', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='RoleID', full_name='dfx.proto.organizations.GenerateTokenRequest.RoleID', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.organizations.GenerateTokenRequest.Name', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Expires', full_name='dfx.proto.organizations.GenerateTokenRequest.Expires', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -547,8 +649,8 @@ _GENERATETOKENREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=793,
-  serialized_end=920,
+  serialized_start=995,
+  serialized_end=1122,
 )
 
 
@@ -558,6 +660,7 @@ _GENERATETOKENRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Token', full_name='dfx.proto.organizations.GenerateTokenResponse.Token', index=0,
@@ -565,7 +668,7 @@ _GENERATETOKENRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -578,14 +681,80 @@ _GENERATETOKENRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=922,
-  serialized_end=960,
+  serialized_start=1124,
+  serialized_end=1162,
 )
 
+
+_LOGINWITHTOKENREQUEST = _descriptor.Descriptor(
+  name='LoginWithTokenRequest',
+  full_name='dfx.proto.organizations.LoginWithTokenRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Token', full_name='dfx.proto.organizations.LoginWithTokenRequest.Token', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1164,
+  serialized_end=1202,
+)
+
+
+_LOGINWITHTOKENRESPONSE = _descriptor.Descriptor(
+  name='LoginWithTokenResponse',
+  full_name='dfx.proto.organizations.LoginWithTokenResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Token', full_name='dfx.proto.organizations.LoginWithTokenResponse.Token', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1204,
+  serialized_end=1243,
+)
+
+_RETRIEVERESPONSE.fields_by_name['OrgAddresses'].message_type = _ORGADDRESS
 _USERSRESPONSE.fields_by_name['users'].message_type = _USER
 _RETRIEVELOGOREQUEST_PARAMVALUES.containing_type = _RETRIEVELOGOREQUEST
 _RETRIEVELOGOREQUEST.fields_by_name['Params'].message_type = _RETRIEVELOGOREQUEST_PARAMVALUES
 DESCRIPTOR.message_types_by_name['RetrieveRequest'] = _RETRIEVEREQUEST
+DESCRIPTOR.message_types_by_name['OrgAddress'] = _ORGADDRESS
 DESCRIPTOR.message_types_by_name['RetrieveResponse'] = _RETRIEVERESPONSE
 DESCRIPTOR.message_types_by_name['User'] = _USER
 DESCRIPTOR.message_types_by_name['UsersRequest'] = _USERSREQUEST
@@ -598,6 +767,8 @@ DESCRIPTOR.message_types_by_name['RetrieveLogoRequest'] = _RETRIEVELOGOREQUEST
 DESCRIPTOR.message_types_by_name['RetrieveLogoResponse'] = _RETRIEVELOGORESPONSE
 DESCRIPTOR.message_types_by_name['GenerateTokenRequest'] = _GENERATETOKENREQUEST
 DESCRIPTOR.message_types_by_name['GenerateTokenResponse'] = _GENERATETOKENRESPONSE
+DESCRIPTOR.message_types_by_name['LoginWithTokenRequest'] = _LOGINWITHTOKENREQUEST
+DESCRIPTOR.message_types_by_name['LoginWithTokenResponse'] = _LOGINWITHTOKENRESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 RetrieveRequest = _reflection.GeneratedProtocolMessageType('RetrieveRequest', (_message.Message,), {
@@ -606,6 +777,13 @@ RetrieveRequest = _reflection.GeneratedProtocolMessageType('RetrieveRequest', (_
   # @@protoc_insertion_point(class_scope:dfx.proto.organizations.RetrieveRequest)
   })
 _sym_db.RegisterMessage(RetrieveRequest)
+
+OrgAddress = _reflection.GeneratedProtocolMessageType('OrgAddress', (_message.Message,), {
+  'DESCRIPTOR' : _ORGADDRESS,
+  '__module__' : 'organizations_pb2'
+  # @@protoc_insertion_point(class_scope:dfx.proto.organizations.OrgAddress)
+  })
+_sym_db.RegisterMessage(OrgAddress)
 
 RetrieveResponse = _reflection.GeneratedProtocolMessageType('RetrieveResponse', (_message.Message,), {
   'DESCRIPTOR' : _RETRIEVERESPONSE,
@@ -699,6 +877,20 @@ GenerateTokenResponse = _reflection.GeneratedProtocolMessageType('GenerateTokenR
   })
 _sym_db.RegisterMessage(GenerateTokenResponse)
 
+LoginWithTokenRequest = _reflection.GeneratedProtocolMessageType('LoginWithTokenRequest', (_message.Message,), {
+  'DESCRIPTOR' : _LOGINWITHTOKENREQUEST,
+  '__module__' : 'organizations_pb2'
+  # @@protoc_insertion_point(class_scope:dfx.proto.organizations.LoginWithTokenRequest)
+  })
+_sym_db.RegisterMessage(LoginWithTokenRequest)
+
+LoginWithTokenResponse = _reflection.GeneratedProtocolMessageType('LoginWithTokenResponse', (_message.Message,), {
+  'DESCRIPTOR' : _LOGINWITHTOKENRESPONSE,
+  '__module__' : 'organizations_pb2'
+  # @@protoc_insertion_point(class_scope:dfx.proto.organizations.LoginWithTokenResponse)
+  })
+_sym_db.RegisterMessage(LoginWithTokenResponse)
+
 
 DESCRIPTOR._options = None
 
@@ -708,8 +900,9 @@ _SERVICES = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=963,
-  serialized_end=1633,
+  create_key=_descriptor._internal_create_key,
+  serialized_start=1246,
+  serialized_end=2033,
   methods=[
   _descriptor.MethodDescriptor(
     name='Retrieve',
@@ -719,6 +912,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_RETRIEVEREQUEST,
     output_type=_RETRIEVERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Users',
@@ -728,6 +922,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_USERSREQUEST,
     output_type=_USERSRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='RegisterLicense',
@@ -737,6 +932,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_REGISTERLICENSEREQUEST,
     output_type=_REGISTERLICENSERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='UnregisterLicense',
@@ -746,6 +942,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_UNREGISTERLICENSEREQUEST,
     output_type=_UNREGISTERLICENSERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='RetrieveLogo',
@@ -755,6 +952,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_RETRIEVELOGOREQUEST,
     output_type=_RETRIEVELOGORESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='GenerateToken',
@@ -764,6 +962,17 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_GENERATETOKENREQUEST,
     output_type=_GENERATETOKENRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='LoginWithToken',
+    full_name='dfx.proto.organizations.Services.LoginWithToken',
+    index=6,
+    containing_service=None,
+    input_type=_LOGINWITHTOKENREQUEST,
+    output_type=_LOGINWITHTOKENRESPONSE,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_SERVICES)

@@ -40,6 +40,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\003DFX\370\001\001',
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\tdfx.proto\x1a\nutil.proto\x1a\rdevices.proto\x1a\rgeneral.proto\x1a\x0cgroups.proto\x1a\x12measurements.proto\x1a\x13organizations.proto\x1a\rstudies.proto\x1a\x0busers.proto\x1a\x0eprofiles.proto\x1a\nmeta.proto\x1a\rbundles.protoB\x1a\n\x10\x61i.nuralogix.dfxB\x03\x44\x46X\xf8\x01\x01P\x00P\x01P\x02P\x03P\x04P\x05P\x06P\x07P\x08P\tP\nb\x06proto3'
   ,
   dependencies=[util__pb2.DESCRIPTOR,devices__pb2.DESCRIPTOR,general__pb2.DESCRIPTOR,groups__pb2.DESCRIPTOR,measurements__pb2.DESCRIPTOR,organizations__pb2.DESCRIPTOR,studies__pb2.DESCRIPTOR,users__pb2.DESCRIPTOR,profiles__pb2.DESCRIPTOR,meta__pb2.DESCRIPTOR,bundles__pb2.DESCRIPTOR,],

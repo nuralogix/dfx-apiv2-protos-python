@@ -18,7 +18,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='dfx.proto.devices',
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\007Devices\370\001\001',
-  serialized_pb=b'\n\rdevices.proto\x12\x11\x64\x66x.proto.devices\"\x0e\n\x0cTypesRequest\"\xb4\x01\n\rTypesResponse\x12\x35\n\x06Values\x18\x01 \x03(\x0b\x32%.dfx.proto.devices.TypesResponse.Type\x1al\n\x04Type\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12\x10\n\x08IsMobile\x18\x04 \x01(\x08\x12\x10\n\x08IsTablet\x18\x05 \x01(\x08\x12\x11\n\tIsDesktop\x18\x06 \x01(\x08\"j\n\rCreateRequest\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x02 \x01(\t\x12\x10\n\x08Platform\x18\x03 \x01(\t\x12\x12\n\nIdentifier\x18\x04 \x01(\t\x12\x0f\n\x07Version\x18\x05 \x01(\t\"\x1c\n\x0e\x43reateResponse\x12\n\n\x02ID\x18\x01 \x01(\t\"\xc3\x01\n\rUpdateRequest\x12<\n\x06Params\x18\x01 \x01(\x0b\x32,.dfx.proto.devices.UpdateRequest.ParamValues\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x03 \x01(\t\x12\x10\n\x08StatusID\x18\x04 \x01(\t\x12\x12\n\nIdentifier\x18\x05 \x01(\t\x12\x0f\n\x07Version\x18\x06 \x01(\t\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eUpdateResponse\"c\n\x0bListRequest\x12\x39\n\x05Query\x18\x01 \x01(\x0b\x32*.dfx.proto.devices.ListRequest.QueryValues\x1a\x19\n\x0bQueryValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\xf0\x01\n\x0cListResponse\x12\x36\n\x06Values\x18\x01 \x03(\x0b\x32&.dfx.proto.devices.ListResponse.Device\x1a\xa7\x01\n\x06\x44\x65vice\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x03 \x01(\t\x12\x10\n\x08StatusID\x18\x04 \x01(\t\x12\x12\n\nIdentifier\x18\x05 \x01(\t\x12\x0f\n\x07Version\x18\x06 \x01(\t\x12\x14\n\x0cMeasurements\x18\x07 \x01(\x05\x12\x0f\n\x07\x43reated\x18\x08 \x01(\r\x12\x0f\n\x07Updated\x18\t \x01(\r\"l\n\x0fRetrieveRequest\x12>\n\x06Params\x18\x01 \x01(\x0b\x32..dfx.proto.devices.RetrieveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\xb1\x01\n\x10RetrieveResponse\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x03 \x01(\t\x12\x10\n\x08StatusID\x18\x04 \x01(\t\x12\x12\n\nIdentifier\x18\x05 \x01(\t\x12\x0f\n\x07Version\x18\x06 \x01(\t\x12\x14\n\x0cMeasurements\x18\x07 \x01(\x05\x12\x0f\n\x07\x43reated\x18\x08 \x01(\r\x12\x0f\n\x07Updated\x18\t \x01(\r\"h\n\rRemoveRequest\x12<\n\x06Params\x18\x01 \x01(\x0b\x32,.dfx.proto.devices.RemoveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eRemoveResponse\"\xb1\x01\n\x0e\x43heckinRequest\x12\x0f\n\x07Version\x18\x01 \x01(\t\x12\x0b\n\x03Lat\x18\x02 \x01(\x02\x12\x0b\n\x03Lng\x18\x03 \x01(\x02\x12\x11\n\tIPAddress\x18\x04 \x01(\t\x12\x12\n\nMACAddress\x18\x05 \x01(\t\x12\x10\n\x08Operator\x18\x06 \x01(\t\x12\x11\n\tFileQueue\x18\x07 \x01(\t\x12\x18\n\x10MeasurementQueue\x18\x08 \x01(\t\x12\x0e\n\x06Status\x18\t \x01(\t\"D\n\x0f\x43heckinResponse\x12\x15\n\rStudyChecksum\x18\x01 \x01(\t\x12\x1a\n\x12\x41\x63tiveMeasurements\x18\x02 \x01(\r2\xc1\x04\n\x08Services\x12L\n\x05Types\x12\x1f.dfx.proto.devices.TypesRequest\x1a .dfx.proto.devices.TypesResponse\"\x00\x12O\n\x06\x43reate\x12 .dfx.proto.devices.CreateRequest\x1a!.dfx.proto.devices.CreateResponse\"\x00\x12I\n\x04List\x12\x1e.dfx.proto.devices.ListRequest\x1a\x1f.dfx.proto.devices.ListResponse\"\x00\x12U\n\x08Retrieve\x12\".dfx.proto.devices.RetrieveRequest\x1a#.dfx.proto.devices.RetrieveResponse\"\x00\x12O\n\x06Update\x12 .dfx.proto.devices.UpdateRequest\x1a!.dfx.proto.devices.UpdateResponse\"\x00\x12O\n\x06Remove\x12 .dfx.proto.devices.RemoveRequest\x1a!.dfx.proto.devices.RemoveResponse\"\x00\x12R\n\x07\x43heckin\x12!.dfx.proto.devices.CheckinRequest\x1a\".dfx.proto.devices.CheckinResponse\"\x00\x42\x1e\n\x10\x61i.nuralogix.dfxB\x07\x44\x65vices\xf8\x01\x01\x62\x06proto3'
+  create_key=_descriptor._internal_create_key,
+  serialized_pb=b'\n\rdevices.proto\x12\x11\x64\x66x.proto.devices\"\x0e\n\x0cTypesRequest\"\xb4\x01\n\rTypesResponse\x12\x35\n\x06Values\x18\x01 \x03(\x0b\x32%.dfx.proto.devices.TypesResponse.Type\x1al\n\x04Type\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12\x10\n\x08IsMobile\x18\x04 \x01(\x08\x12\x10\n\x08IsTablet\x18\x05 \x01(\x08\x12\x11\n\tIsDesktop\x18\x06 \x01(\x08\"j\n\rCreateRequest\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x02 \x01(\t\x12\x10\n\x08Platform\x18\x03 \x01(\t\x12\x12\n\nIdentifier\x18\x04 \x01(\t\x12\x0f\n\x07Version\x18\x05 \x01(\t\"\x1c\n\x0e\x43reateResponse\x12\n\n\x02ID\x18\x01 \x01(\t\"\xc3\x01\n\rUpdateRequest\x12<\n\x06Params\x18\x01 \x01(\x0b\x32,.dfx.proto.devices.UpdateRequest.ParamValues\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x03 \x01(\t\x12\x10\n\x08StatusID\x18\x04 \x01(\t\x12\x12\n\nIdentifier\x18\x05 \x01(\t\x12\x0f\n\x07Version\x18\x06 \x01(\t\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eUpdateResponse\"c\n\x0bListRequest\x12\x39\n\x05Query\x18\x01 \x01(\x0b\x32*.dfx.proto.devices.ListRequest.QueryValues\x1a\x19\n\x0bQueryValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\xf0\x01\n\x0cListResponse\x12\x36\n\x06Values\x18\x01 \x03(\x0b\x32&.dfx.proto.devices.ListResponse.Device\x1a\xa7\x01\n\x06\x44\x65vice\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x03 \x01(\t\x12\x10\n\x08StatusID\x18\x04 \x01(\t\x12\x12\n\nIdentifier\x18\x05 \x01(\t\x12\x0f\n\x07Version\x18\x06 \x01(\t\x12\x14\n\x0cMeasurements\x18\x07 \x01(\x05\x12\x0f\n\x07\x43reated\x18\x08 \x01(\r\x12\x0f\n\x07Updated\x18\t \x01(\r\"l\n\x0fRetrieveRequest\x12>\n\x06Params\x18\x01 \x01(\x0b\x32..dfx.proto.devices.RetrieveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\xc1\x01\n\x10RetrieveResponse\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x14\n\x0c\x44\x65viceTypeID\x18\x03 \x01(\t\x12\x10\n\x08StatusID\x18\x04 \x01(\t\x12\x12\n\nIdentifier\x18\x05 \x01(\t\x12\x0f\n\x07Version\x18\x06 \x01(\t\x12\x14\n\x0cMeasurements\x18\x07 \x01(\x05\x12\x0f\n\x07\x43reated\x18\x08 \x01(\r\x12\x0f\n\x07Updated\x18\t \x01(\r\x12\x0e\n\x06Region\x18\n \x01(\t\"h\n\rRemoveRequest\x12<\n\x06Params\x18\x01 \x01(\x0b\x32,.dfx.proto.devices.RemoveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eRemoveResponse\"\xb1\x01\n\x0e\x43heckinRequest\x12\x0f\n\x07Version\x18\x01 \x01(\t\x12\x0b\n\x03Lat\x18\x02 \x01(\x02\x12\x0b\n\x03Lng\x18\x03 \x01(\x02\x12\x11\n\tIPAddress\x18\x04 \x01(\t\x12\x12\n\nMACAddress\x18\x05 \x01(\t\x12\x10\n\x08Operator\x18\x06 \x01(\t\x12\x11\n\tFileQueue\x18\x07 \x01(\t\x12\x18\n\x10MeasurementQueue\x18\x08 \x01(\t\x12\x0e\n\x06Status\x18\t \x01(\t\"D\n\x0f\x43heckinResponse\x12\x15\n\rStudyChecksum\x18\x01 \x01(\t\x12\x1a\n\x12\x41\x63tiveMeasurements\x18\x02 \x01(\r2\xc1\x04\n\x08Services\x12L\n\x05Types\x12\x1f.dfx.proto.devices.TypesRequest\x1a .dfx.proto.devices.TypesResponse\"\x00\x12O\n\x06\x43reate\x12 .dfx.proto.devices.CreateRequest\x1a!.dfx.proto.devices.CreateResponse\"\x00\x12I\n\x04List\x12\x1e.dfx.proto.devices.ListRequest\x1a\x1f.dfx.proto.devices.ListResponse\"\x00\x12U\n\x08Retrieve\x12\".dfx.proto.devices.RetrieveRequest\x1a#.dfx.proto.devices.RetrieveResponse\"\x00\x12O\n\x06Update\x12 .dfx.proto.devices.UpdateRequest\x1a!.dfx.proto.devices.UpdateResponse\"\x00\x12O\n\x06Remove\x12 .dfx.proto.devices.RemoveRequest\x1a!.dfx.proto.devices.RemoveResponse\"\x00\x12R\n\x07\x43heckin\x12!.dfx.proto.devices.CheckinRequest\x1a\".dfx.proto.devices.CheckinResponse\"\x00\x42\x1e\n\x10\x61i.nuralogix.dfxB\x07\x44\x65vices\xf8\x01\x01\x62\x06proto3'
 )
 
 
@@ -30,6 +31,7 @@ _TYPESREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -54,6 +56,7 @@ _TYPESRESPONSE_TYPE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.devices.TypesResponse.Type.ID', index=0,
@@ -61,42 +64,42 @@ _TYPESRESPONSE_TYPE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.devices.TypesResponse.Type.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Description', full_name='dfx.proto.devices.TypesResponse.Type.Description', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='IsMobile', full_name='dfx.proto.devices.TypesResponse.Type.IsMobile', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='IsTablet', full_name='dfx.proto.devices.TypesResponse.Type.IsTablet', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='IsDesktop', full_name='dfx.proto.devices.TypesResponse.Type.IsDesktop', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -119,6 +122,7 @@ _TYPESRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.devices.TypesResponse.Values', index=0,
@@ -126,7 +130,7 @@ _TYPESRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -150,6 +154,7 @@ _CREATEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.devices.CreateRequest.Name', index=0,
@@ -157,35 +162,35 @@ _CREATEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DeviceTypeID', full_name='dfx.proto.devices.CreateRequest.DeviceTypeID', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Platform', full_name='dfx.proto.devices.CreateRequest.Platform', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Identifier', full_name='dfx.proto.devices.CreateRequest.Identifier', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.devices.CreateRequest.Version', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -209,6 +214,7 @@ _CREATERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.devices.CreateResponse.ID', index=0,
@@ -216,7 +222,7 @@ _CREATERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -240,6 +246,7 @@ _UPDATEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.devices.UpdateRequest.ParamValues.ID', index=0,
@@ -247,7 +254,7 @@ _UPDATEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -270,6 +277,7 @@ _UPDATEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.devices.UpdateRequest.Params', index=0,
@@ -277,42 +285,42 @@ _UPDATEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.devices.UpdateRequest.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DeviceTypeID', full_name='dfx.proto.devices.UpdateRequest.DeviceTypeID', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='StatusID', full_name='dfx.proto.devices.UpdateRequest.StatusID', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Identifier', full_name='dfx.proto.devices.UpdateRequest.Identifier', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.devices.UpdateRequest.Version', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -336,6 +344,7 @@ _UPDATERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -360,6 +369,7 @@ _LISTREQUEST_QUERYVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.devices.ListRequest.QueryValues.ID', index=0,
@@ -367,7 +377,7 @@ _LISTREQUEST_QUERYVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -390,6 +400,7 @@ _LISTREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Query', full_name='dfx.proto.devices.ListRequest.Query', index=0,
@@ -397,7 +408,7 @@ _LISTREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -421,6 +432,7 @@ _LISTRESPONSE_DEVICE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.devices.ListResponse.Device.ID', index=0,
@@ -428,63 +440,63 @@ _LISTRESPONSE_DEVICE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.devices.ListResponse.Device.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DeviceTypeID', full_name='dfx.proto.devices.ListResponse.Device.DeviceTypeID', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='StatusID', full_name='dfx.proto.devices.ListResponse.Device.StatusID', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Identifier', full_name='dfx.proto.devices.ListResponse.Device.Identifier', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.devices.ListResponse.Device.Version', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Measurements', full_name='dfx.proto.devices.ListResponse.Device.Measurements', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Created', full_name='dfx.proto.devices.ListResponse.Device.Created', index=7,
       number=8, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Updated', full_name='dfx.proto.devices.ListResponse.Device.Updated', index=8,
       number=9, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -507,6 +519,7 @@ _LISTRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.devices.ListResponse.Values', index=0,
@@ -514,7 +527,7 @@ _LISTRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -538,6 +551,7 @@ _RETRIEVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.devices.RetrieveRequest.ParamValues.ID', index=0,
@@ -545,7 +559,7 @@ _RETRIEVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -568,6 +582,7 @@ _RETRIEVEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.devices.RetrieveRequest.Params', index=0,
@@ -575,7 +590,7 @@ _RETRIEVEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -599,6 +614,7 @@ _RETRIEVERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.devices.RetrieveResponse.ID', index=0,
@@ -606,63 +622,70 @@ _RETRIEVERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.devices.RetrieveResponse.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DeviceTypeID', full_name='dfx.proto.devices.RetrieveResponse.DeviceTypeID', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='StatusID', full_name='dfx.proto.devices.RetrieveResponse.StatusID', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Identifier', full_name='dfx.proto.devices.RetrieveResponse.Identifier', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.devices.RetrieveResponse.Version', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Measurements', full_name='dfx.proto.devices.RetrieveResponse.Measurements', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Created', full_name='dfx.proto.devices.RetrieveResponse.Created', index=7,
       number=8, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Updated', full_name='dfx.proto.devices.RetrieveResponse.Updated', index=8,
       number=9, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Region', full_name='dfx.proto.devices.RetrieveResponse.Region', index=9,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -676,7 +699,7 @@ _RETRIEVERESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=1044,
-  serialized_end=1221,
+  serialized_end=1237,
 )
 
 
@@ -686,6 +709,7 @@ _REMOVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.devices.RemoveRequest.ParamValues.ID', index=0,
@@ -693,7 +717,7 @@ _REMOVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -716,6 +740,7 @@ _REMOVEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.devices.RemoveRequest.Params', index=0,
@@ -723,7 +748,7 @@ _REMOVEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -736,8 +761,8 @@ _REMOVEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1223,
-  serialized_end=1327,
+  serialized_start=1239,
+  serialized_end=1343,
 )
 
 
@@ -747,6 +772,7 @@ _REMOVERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -760,8 +786,8 @@ _REMOVERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1329,
-  serialized_end=1345,
+  serialized_start=1345,
+  serialized_end=1361,
 )
 
 
@@ -771,6 +797,7 @@ _CHECKINREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.devices.CheckinRequest.Version', index=0,
@@ -778,63 +805,63 @@ _CHECKINREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Lat', full_name='dfx.proto.devices.CheckinRequest.Lat', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Lng', full_name='dfx.proto.devices.CheckinRequest.Lng', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='IPAddress', full_name='dfx.proto.devices.CheckinRequest.IPAddress', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='MACAddress', full_name='dfx.proto.devices.CheckinRequest.MACAddress', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Operator', full_name='dfx.proto.devices.CheckinRequest.Operator', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FileQueue', full_name='dfx.proto.devices.CheckinRequest.FileQueue', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='MeasurementQueue', full_name='dfx.proto.devices.CheckinRequest.MeasurementQueue', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Status', full_name='dfx.proto.devices.CheckinRequest.Status', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -847,8 +874,8 @@ _CHECKINREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1348,
-  serialized_end=1525,
+  serialized_start=1364,
+  serialized_end=1541,
 )
 
 
@@ -858,6 +885,7 @@ _CHECKINRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='StudyChecksum', full_name='dfx.proto.devices.CheckinResponse.StudyChecksum', index=0,
@@ -865,14 +893,14 @@ _CHECKINRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='ActiveMeasurements', full_name='dfx.proto.devices.CheckinResponse.ActiveMeasurements', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -885,8 +913,8 @@ _CHECKINRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1527,
-  serialized_end=1595,
+  serialized_start=1543,
+  serialized_end=1611,
 )
 
 _TYPESRESPONSE_TYPE.containing_type = _TYPESRESPONSE
@@ -1072,8 +1100,9 @@ _SERVICES = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=1598,
-  serialized_end=2175,
+  create_key=_descriptor._internal_create_key,
+  serialized_start=1614,
+  serialized_end=2191,
   methods=[
   _descriptor.MethodDescriptor(
     name='Types',
@@ -1083,6 +1112,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_TYPESREQUEST,
     output_type=_TYPESRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Create',
@@ -1092,6 +1122,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_CREATEREQUEST,
     output_type=_CREATERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='List',
@@ -1101,6 +1132,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_LISTREQUEST,
     output_type=_LISTRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Retrieve',
@@ -1110,6 +1142,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_RETRIEVEREQUEST,
     output_type=_RETRIEVERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Update',
@@ -1119,6 +1152,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_UPDATEREQUEST,
     output_type=_UPDATERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Remove',
@@ -1128,6 +1162,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_REMOVEREQUEST,
     output_type=_REMOVERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Checkin',
@@ -1137,6 +1172,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_CHECKINREQUEST,
     output_type=_CHECKINRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_SERVICES)

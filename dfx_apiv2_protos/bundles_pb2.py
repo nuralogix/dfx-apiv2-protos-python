@@ -18,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='dfx.proto.bundles',
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\007Bundles\370\001\001',
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\rbundles.proto\x12\x11\x64\x66x.proto.bundles\"t\n\rCreateRequest\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x0f\n\x07Version\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12\x11\n\tCreatedBy\x18\x04 \x01(\t\x12\x0c\n\x04Size\x18\x05 \x01(\r\x12\x0e\n\x06\x42undle\x18\x06 \x01(\t\"\x1c\n\x0e\x43reateResponse\x12\n\n\x02ID\x18\x01 \x01(\t\"\xcd\x01\n\rUpdateRequest\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x0f\n\x07Version\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12\x11\n\tCreatedBy\x18\x04 \x01(\t\x12\x0c\n\x04Size\x18\x05 \x01(\r\x12\x0e\n\x06\x42undle\x18\x06 \x01(\t\x12<\n\x06Params\x18\x07 \x01(\x0b\x32,.dfx.proto.bundles.UpdateRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eUpdateResponse\"h\n\rRemoveRequest\x12<\n\x06Params\x18\x01 \x01(\x0b\x32,.dfx.proto.bundles.RemoveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eRemoveResponse\"l\n\x0f\x44ownloadRequest\x12>\n\x06Params\x18\x01 \x01(\x0b\x32..dfx.proto.bundles.DownloadRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x99\x01\n\x10\x44ownloadResponse\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x0f\n\x07Version\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12\x11\n\tCreatedBy\x18\x04 \x01(\t\x12\x0c\n\x04Size\x18\x05 \x01(\r\x12\x0e\n\x06\x42undle\x18\x06 \x01(\t\x12\x0f\n\x07\x43reated\x18\x07 \x01(\r\x12\x0f\n\x07Updated\x18\x08 \x01(\r\"\xa1\x01\n\x1dSetStudyTemplateBundleRequest\x12L\n\x06Params\x18\x01 \x01(\x0b\x32<.dfx.proto.bundles.SetStudyTemplateBundleRequest.ParamValues\x1a\x32\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x17\n\x0fStudyTemplateID\x18\x02 \x01(\t\" \n\x1eSetStudyTemplateBundleResponse\"\xa5\x01\n\x1fUnsetStudyTemplateBundleRequest\x12N\n\x06Params\x18\x01 \x01(\x0b\x32>.dfx.proto.bundles.UnsetStudyTemplateBundleRequest.ParamValues\x1a\x32\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x17\n\x0fStudyTemplateID\x18\x02 \x01(\t\"\"\n UnsetStudyTemplateBundleResponse2\xdd\x04\n\x08Services\x12O\n\x06\x43reate\x12 .dfx.proto.bundles.CreateRequest\x1a!.dfx.proto.bundles.CreateResponse\"\x00\x12O\n\x06Update\x12 .dfx.proto.bundles.UpdateRequest\x1a!.dfx.proto.bundles.UpdateResponse\"\x00\x12O\n\x06Remove\x12 .dfx.proto.bundles.RemoveRequest\x1a!.dfx.proto.bundles.RemoveResponse\"\x00\x12U\n\x08\x44ownload\x12\".dfx.proto.bundles.DownloadRequest\x1a#.dfx.proto.bundles.DownloadResponse\"\x00\x12\x7f\n\x16SetStudyTemplateBundle\x12\x30.dfx.proto.bundles.SetStudyTemplateBundleRequest\x1a\x31.dfx.proto.bundles.SetStudyTemplateBundleResponse\"\x00\x12\x85\x01\n\x18UnsetStudyTemplateBundle\x12\x32.dfx.proto.bundles.UnsetStudyTemplateBundleRequest\x1a\x33.dfx.proto.bundles.UnsetStudyTemplateBundleResponse\"\x00\x42\x1e\n\x10\x61i.nuralogix.dfxB\x07\x42undles\xf8\x01\x01\x62\x06proto3'
 )
 
@@ -30,6 +31,7 @@ _CREATEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.bundles.CreateRequest.Name', index=0,
@@ -37,42 +39,42 @@ _CREATEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.bundles.CreateRequest.Version', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Description', full_name='dfx.proto.bundles.CreateRequest.Description', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='CreatedBy', full_name='dfx.proto.bundles.CreateRequest.CreatedBy', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Size', full_name='dfx.proto.bundles.CreateRequest.Size', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Bundle', full_name='dfx.proto.bundles.CreateRequest.Bundle', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -96,6 +98,7 @@ _CREATERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.bundles.CreateResponse.ID', index=0,
@@ -103,7 +106,7 @@ _CREATERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -127,6 +130,7 @@ _UPDATEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.bundles.UpdateRequest.ParamValues.ID', index=0,
@@ -134,7 +138,7 @@ _UPDATEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -157,6 +161,7 @@ _UPDATEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.bundles.UpdateRequest.Name', index=0,
@@ -164,49 +169,49 @@ _UPDATEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.bundles.UpdateRequest.Version', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Description', full_name='dfx.proto.bundles.UpdateRequest.Description', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='CreatedBy', full_name='dfx.proto.bundles.UpdateRequest.CreatedBy', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Size', full_name='dfx.proto.bundles.UpdateRequest.Size', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Bundle', full_name='dfx.proto.bundles.UpdateRequest.Bundle', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.bundles.UpdateRequest.Params', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -230,6 +235,7 @@ _UPDATERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -254,6 +260,7 @@ _REMOVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.bundles.RemoveRequest.ParamValues.ID', index=0,
@@ -261,7 +268,7 @@ _REMOVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -284,6 +291,7 @@ _REMOVEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.bundles.RemoveRequest.Params', index=0,
@@ -291,7 +299,7 @@ _REMOVEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -315,6 +323,7 @@ _REMOVERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -339,6 +348,7 @@ _DOWNLOADREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.bundles.DownloadRequest.ParamValues.ID', index=0,
@@ -346,7 +356,7 @@ _DOWNLOADREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -369,6 +379,7 @@ _DOWNLOADREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.bundles.DownloadRequest.Params', index=0,
@@ -376,7 +387,7 @@ _DOWNLOADREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -400,6 +411,7 @@ _DOWNLOADRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='dfx.proto.bundles.DownloadResponse.Name', index=0,
@@ -407,56 +419,56 @@ _DOWNLOADRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Version', full_name='dfx.proto.bundles.DownloadResponse.Version', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Description', full_name='dfx.proto.bundles.DownloadResponse.Description', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='CreatedBy', full_name='dfx.proto.bundles.DownloadResponse.CreatedBy', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Size', full_name='dfx.proto.bundles.DownloadResponse.Size', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Bundle', full_name='dfx.proto.bundles.DownloadResponse.Bundle', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Created', full_name='dfx.proto.bundles.DownloadResponse.Created', index=6,
       number=7, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Updated', full_name='dfx.proto.bundles.DownloadResponse.Updated', index=7,
       number=8, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -480,6 +492,7 @@ _SETSTUDYTEMPLATEBUNDLEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.bundles.SetStudyTemplateBundleRequest.ParamValues.ID', index=0,
@@ -487,14 +500,14 @@ _SETSTUDYTEMPLATEBUNDLEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='StudyTemplateID', full_name='dfx.proto.bundles.SetStudyTemplateBundleRequest.ParamValues.StudyTemplateID', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -517,6 +530,7 @@ _SETSTUDYTEMPLATEBUNDLEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.bundles.SetStudyTemplateBundleRequest.Params', index=0,
@@ -524,7 +538,7 @@ _SETSTUDYTEMPLATEBUNDLEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -548,6 +562,7 @@ _SETSTUDYTEMPLATEBUNDLERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -572,6 +587,7 @@ _UNSETSTUDYTEMPLATEBUNDLEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.bundles.UnsetStudyTemplateBundleRequest.ParamValues.ID', index=0,
@@ -579,14 +595,14 @@ _UNSETSTUDYTEMPLATEBUNDLEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='StudyTemplateID', full_name='dfx.proto.bundles.UnsetStudyTemplateBundleRequest.ParamValues.StudyTemplateID', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -609,6 +625,7 @@ _UNSETSTUDYTEMPLATEBUNDLEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.bundles.UnsetStudyTemplateBundleRequest.Params', index=0,
@@ -616,7 +633,7 @@ _UNSETSTUDYTEMPLATEBUNDLEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -640,6 +657,7 @@ _UNSETSTUDYTEMPLATEBUNDLERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -814,6 +832,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_start=1203,
   serialized_end=1808,
   methods=[
@@ -825,6 +844,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_CREATEREQUEST,
     output_type=_CREATERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Update',
@@ -834,6 +854,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_UPDATEREQUEST,
     output_type=_UPDATERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Remove',
@@ -843,6 +864,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_REMOVEREQUEST,
     output_type=_REMOVERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Download',
@@ -852,6 +874,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_DOWNLOADREQUEST,
     output_type=_DOWNLOADRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='SetStudyTemplateBundle',
@@ -861,6 +884,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_SETSTUDYTEMPLATEBUNDLEREQUEST,
     output_type=_SETSTUDYTEMPLATEBUNDLERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='UnsetStudyTemplateBundle',
@@ -870,6 +894,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_UNSETSTUDYTEMPLATEBUNDLEREQUEST,
     output_type=_UNSETSTUDYTEMPLATEBUNDLERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_SERVICES)

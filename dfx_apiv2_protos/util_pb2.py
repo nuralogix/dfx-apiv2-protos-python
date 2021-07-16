@@ -18,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='dfx.proto.util',
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\004Util\370\001\001',
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\nutil.proto\x12\x0e\x64\x66x.proto.util\"\xc8\x01\n\x05\x45rror\x12\x0c\n\x04\x43ode\x18\x01 \x01(\t\x12\x31\n\x06\x45rrors\x18\x02 \x03(\x0b\x32!.dfx.proto.util.Error.ErrorsEntry\x12\x0f\n\x07Message\x18\x03 \x01(\t\x1a\x1b\n\x0b\x44\x65scription\x12\x0c\n\x04msgs\x18\x01 \x03(\t\x1aP\n\x0b\x45rrorsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x30\n\x05value\x18\x02 \x01(\x0b\x32!.dfx.proto.util.Error.Description:\x02\x38\x01\"\r\n\x0bParamValues\"\r\n\x0bQueryValuesB\x1b\n\x10\x61i.nuralogix.dfxB\x04Util\xf8\x01\x01\x62\x06proto3'
 )
 
@@ -30,6 +31,7 @@ _ERROR_DESCRIPTION = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='msgs', full_name='dfx.proto.util.Error.Description.msgs', index=0,
@@ -37,7 +39,7 @@ _ERROR_DESCRIPTION = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -60,6 +62,7 @@ _ERROR_ERRORSENTRY = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='key', full_name='dfx.proto.util.Error.ErrorsEntry.key', index=0,
@@ -67,14 +70,14 @@ _ERROR_ERRORSENTRY = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='dfx.proto.util.Error.ErrorsEntry.value', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -97,6 +100,7 @@ _ERROR = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Code', full_name='dfx.proto.util.Error.Code', index=0,
@@ -104,21 +108,21 @@ _ERROR = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Errors', full_name='dfx.proto.util.Error.Errors', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Message', full_name='dfx.proto.util.Error.Message', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -142,6 +146,7 @@ _PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -166,6 +171,7 @@ _QUERYVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[

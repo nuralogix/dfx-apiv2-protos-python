@@ -18,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='dfx.proto.analysis',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x0e\x61nalysis.proto\x12\x12\x64\x66x.proto.analysis\"\x14\n\x12ListSignalsRequest\"+\n\x13ListSignalsResponse\x12\x14\n\x0csignal_names\x18\x01 \x03(\t\".\n\x16\x44\x65scribeSignalsRequest\x12\x14\n\x0csignal_names\x18\x01 \x03(\t\"\xaf\x03\n\x17\x44\x65scribeSignalsResponse\x12P\n\x0esignal_details\x18\x01 \x03(\x0b\x32\x38.dfx.proto.analysis.DescribeSignalsResponse.SignalDetail\x1a\xc1\x02\n\x0cSignalDetail\x12\x13\n\x0bsignal_name\x18\x01 \x01(\t\x12\x19\n\x11initial_delay_sec\x18\x02 \x01(\r\x12\x15\n\rmodel_min_sec\x18\x03 \x01(\r\x12\x0f\n\x07min_fps\x18\x04 \x01(\r\x12\x12\n\ntarget_fps\x18\x05 \x01(\r\x12\x15\n\rdefault_model\x18\x06 \x01(\t\x12\x18\n\x10\x61vailable_models\x18\x07 \x03(\t\x12_\n\x0fsignal_channels\x18\x08 \x03(\x0b\x32\x46.dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.SignalChannel\x1a\x33\n\rSignalChannel\x12\x0b\n\x03roi\x18\x01 \x01(\t\x12\x15\n\rchannel_names\x18\x02 \x03(\t\"\xc1\x03\n\x12\x41nalyzeDataRequest\x12\x0b\n\x03\x66ps\x18\x01 \x01(\r\x12\x12\n\ntimestamps\x18\x02 \x03(\x02\x12>\n\x07signals\x18\x03 \x03(\x0b\x32-.dfx.proto.analysis.AnalyzeDataRequest.Signal\x12@\n\x08\x63hannels\x18\x04 \x03(\x0b\x32..dfx.proto.analysis.AnalyzeDataRequest.Channel\x1a\x62\n\x06Signal\x12\x13\n\x0bsignal_name\x18\x01 \x01(\t\x12\x12\n\nmodel_name\x18\x02 \x01(\t\x12\x12\n\nresolution\x18\x03 \x01(\r\x12\x1b\n\x13\x65stimate_confidence\x18\x04 \x01(\x08\x1a\xa3\x01\n\x07\x43hannel\x12\x0b\n\x03roi\x18\x01 \x01(\t\x12\x12\n\nnum_frames\x18\x02 \x01(\r\x12H\n\x08\x64\x61tasets\x18\x03 \x03(\x0b\x32\x36.dfx.proto.analysis.AnalyzeDataRequest.Channel.Dataset\x1a-\n\x07\x44\x61taset\x12\x14\n\x0c\x63hannel_name\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x02 \x03(\x02\"\xba\x01\n\x13\x41nalyzeDataResponse\x12?\n\x07results\x18\x01 \x03(\x0b\x32..dfx.proto.analysis.AnalyzeDataResponse.Result\x1a\x62\n\x06Result\x12\x13\n\x0bsignal_name\x18\x01 \x01(\t\x12\x0b\n\x03roi\x18\x02 \x01(\t\x12\x14\n\x0c\x63hannel_name\x18\x03 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x04 \x03(\x02\x12\x12\n\nconfidence\x18\x05 \x03(\x02\x32\xbc\x02\n\x08\x41nalysis\x12`\n\x0bListSignals\x12&.dfx.proto.analysis.ListSignalsRequest\x1a\'.dfx.proto.analysis.ListSignalsResponse\"\x00\x12l\n\x0f\x44\x65scribeSignals\x12*.dfx.proto.analysis.DescribeSignalsRequest\x1a+.dfx.proto.analysis.DescribeSignalsResponse\"\x00\x12`\n\x0b\x41nalyzeData\x12&.dfx.proto.analysis.AnalyzeDataRequest\x1a\'.dfx.proto.analysis.AnalyzeDataResponse\"\x00\x62\x06proto3'
 )
 
@@ -30,6 +31,7 @@ _LISTSIGNALSREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -54,6 +56,7 @@ _LISTSIGNALSRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='signal_names', full_name='dfx.proto.analysis.ListSignalsResponse.signal_names', index=0,
@@ -61,7 +64,7 @@ _LISTSIGNALSRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -85,6 +88,7 @@ _DESCRIBESIGNALSREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='signal_names', full_name='dfx.proto.analysis.DescribeSignalsRequest.signal_names', index=0,
@@ -92,7 +96,7 @@ _DESCRIBESIGNALSREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -116,6 +120,7 @@ _DESCRIBESIGNALSRESPONSE_SIGNALDETAIL_SIGNALCHANNEL = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='roi', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.SignalChannel.roi', index=0,
@@ -123,14 +128,14 @@ _DESCRIBESIGNALSRESPONSE_SIGNALDETAIL_SIGNALCHANNEL = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='channel_names', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.SignalChannel.channel_names', index=1,
       number=2, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -153,6 +158,7 @@ _DESCRIBESIGNALSRESPONSE_SIGNALDETAIL = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='signal_name', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.signal_name', index=0,
@@ -160,56 +166,56 @@ _DESCRIBESIGNALSRESPONSE_SIGNALDETAIL = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='initial_delay_sec', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.initial_delay_sec', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='model_min_sec', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.model_min_sec', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='min_fps', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.min_fps', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='target_fps', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.target_fps', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='default_model', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.default_model', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='available_models', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.available_models', index=6,
       number=7, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='signal_channels', full_name='dfx.proto.analysis.DescribeSignalsResponse.SignalDetail.signal_channels', index=7,
       number=8, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -232,6 +238,7 @@ _DESCRIBESIGNALSRESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='signal_details', full_name='dfx.proto.analysis.DescribeSignalsResponse.signal_details', index=0,
@@ -239,7 +246,7 @@ _DESCRIBESIGNALSRESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -263,6 +270,7 @@ _ANALYZEDATAREQUEST_SIGNAL = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='signal_name', full_name='dfx.proto.analysis.AnalyzeDataRequest.Signal.signal_name', index=0,
@@ -270,28 +278,28 @@ _ANALYZEDATAREQUEST_SIGNAL = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='model_name', full_name='dfx.proto.analysis.AnalyzeDataRequest.Signal.model_name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='resolution', full_name='dfx.proto.analysis.AnalyzeDataRequest.Signal.resolution', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='estimate_confidence', full_name='dfx.proto.analysis.AnalyzeDataRequest.Signal.estimate_confidence', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -314,6 +322,7 @@ _ANALYZEDATAREQUEST_CHANNEL_DATASET = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='channel_name', full_name='dfx.proto.analysis.AnalyzeDataRequest.Channel.Dataset.channel_name', index=0,
@@ -321,14 +330,14 @@ _ANALYZEDATAREQUEST_CHANNEL_DATASET = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='data', full_name='dfx.proto.analysis.AnalyzeDataRequest.Channel.Dataset.data', index=1,
       number=2, type=2, cpp_type=6, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -351,6 +360,7 @@ _ANALYZEDATAREQUEST_CHANNEL = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='roi', full_name='dfx.proto.analysis.AnalyzeDataRequest.Channel.roi', index=0,
@@ -358,21 +368,21 @@ _ANALYZEDATAREQUEST_CHANNEL = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='num_frames', full_name='dfx.proto.analysis.AnalyzeDataRequest.Channel.num_frames', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='datasets', full_name='dfx.proto.analysis.AnalyzeDataRequest.Channel.datasets', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -395,6 +405,7 @@ _ANALYZEDATAREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='fps', full_name='dfx.proto.analysis.AnalyzeDataRequest.fps', index=0,
@@ -402,28 +413,28 @@ _ANALYZEDATAREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='timestamps', full_name='dfx.proto.analysis.AnalyzeDataRequest.timestamps', index=1,
       number=2, type=2, cpp_type=6, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='signals', full_name='dfx.proto.analysis.AnalyzeDataRequest.signals', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='channels', full_name='dfx.proto.analysis.AnalyzeDataRequest.channels', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -447,6 +458,7 @@ _ANALYZEDATARESPONSE_RESULT = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='signal_name', full_name='dfx.proto.analysis.AnalyzeDataResponse.Result.signal_name', index=0,
@@ -454,35 +466,35 @@ _ANALYZEDATARESPONSE_RESULT = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='roi', full_name='dfx.proto.analysis.AnalyzeDataResponse.Result.roi', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='channel_name', full_name='dfx.proto.analysis.AnalyzeDataResponse.Result.channel_name', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='data', full_name='dfx.proto.analysis.AnalyzeDataResponse.Result.data', index=3,
       number=4, type=2, cpp_type=6, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='confidence', full_name='dfx.proto.analysis.AnalyzeDataResponse.Result.confidence', index=4,
       number=5, type=2, cpp_type=6, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -505,6 +517,7 @@ _ANALYZEDATARESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='results', full_name='dfx.proto.analysis.AnalyzeDataResponse.results', index=0,
@@ -512,7 +525,7 @@ _ANALYZEDATARESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -647,6 +660,7 @@ _ANALYSIS = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_start=1229,
   serialized_end=1545,
   methods=[
@@ -658,6 +672,7 @@ _ANALYSIS = _descriptor.ServiceDescriptor(
     input_type=_LISTSIGNALSREQUEST,
     output_type=_LISTSIGNALSRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='DescribeSignals',
@@ -667,6 +682,7 @@ _ANALYSIS = _descriptor.ServiceDescriptor(
     input_type=_DESCRIBESIGNALSREQUEST,
     output_type=_DESCRIBESIGNALSRESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='AnalyzeData',
@@ -676,6 +692,7 @@ _ANALYSIS = _descriptor.ServiceDescriptor(
     input_type=_ANALYZEDATAREQUEST,
     output_type=_ANALYZEDATARESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_ANALYSIS)

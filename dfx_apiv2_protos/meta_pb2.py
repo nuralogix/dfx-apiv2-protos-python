@@ -18,6 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='dfx.proto.meta',
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\004Meta\370\001\001',
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\nmeta.proto\x12\x0e\x64\x66x.proto.meta\"\xd6\x01\n\rUpdateRequest\x12\x39\n\x06Params\x18\x01 \x01(\x0b\x32).dfx.proto.meta.UpdateRequest.ParamValues\x12\x39\n\x06Values\x18\x02 \x03(\x0b\x32).dfx.proto.meta.UpdateRequest.ValuesEntry\x1a \n\x0bParamValues\x12\x11\n\tNamespace\x18\x01 \x01(\t\x1a-\n\x0bValuesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"\x10\n\x0eUpdateResponse\"\xcb\x01\n\x0fRetrieveRequest\x12;\n\x06Params\x18\x01 \x01(\x0b\x32+.dfx.proto.meta.RetrieveRequest.ParamValues\x12:\n\x05Query\x18\x02 \x01(\x0b\x32+.dfx.proto.meta.RetrieveRequest.QueryValues\x1a \n\x0bParamValues\x12\x11\n\tNamespace\x18\x01 \x01(\t\x1a\x1d\n\x0bQueryValues\x12\x0e\n\x06\x46ields\x18\x01 \x01(\t\"\x7f\n\x10RetrieveResponse\x12<\n\x06Values\x18\x01 \x03(\x0b\x32,.dfx.proto.meta.RetrieveResponse.ValuesEntry\x1a-\n\x0bValuesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"\xf7\x01\n\x15RetrieveByTypeRequest\x12\x41\n\x06Params\x18\x01 \x01(\x0b\x32\x31.dfx.proto.meta.RetrieveByTypeRequest.ParamValues\x12@\n\x05Query\x18\x02 \x01(\x0b\x32\x31.dfx.proto.meta.RetrieveByTypeRequest.QueryValues\x1a:\n\x0bParamValues\x12\x0c\n\x04Type\x18\x01 \x01(\t\x12\n\n\x02ID\x18\x02 \x01(\t\x12\x11\n\tNamespace\x18\x03 \x01(\t\x1a\x1d\n\x0bQueryValues\x12\x0e\n\x06\x46ields\x18\x01 \x01(\t\"\x8b\x01\n\x16RetrieveByTypeResponse\x12\x42\n\x06Values\x18\x01 \x03(\x0b\x32\x32.dfx.proto.meta.RetrieveByTypeResponse.ValuesEntry\x1a-\n\x0bValuesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"\x82\x02\n\x13UpdateByTypeRequest\x12?\n\x06Params\x18\x01 \x01(\x0b\x32/.dfx.proto.meta.UpdateByTypeRequest.ParamValues\x12?\n\x06Values\x18\x02 \x03(\x0b\x32/.dfx.proto.meta.UpdateByTypeRequest.ValuesEntry\x1a:\n\x0bParamValues\x12\x0c\n\x04Type\x18\x01 \x01(\t\x12\n\n\x02ID\x18\x02 \x01(\t\x12\x11\n\tNamespace\x18\x03 \x01(\t\x1a-\n\x0bValuesEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"\x16\n\x14UpdateByTypeResponse2\xe6\x02\n\x08Services\x12O\n\x08Retrieve\x12\x1f.dfx.proto.meta.RetrieveRequest\x1a .dfx.proto.meta.RetrieveResponse\"\x00\x12\x61\n\x0eRetrieveByType\x12%.dfx.proto.meta.RetrieveByTypeRequest\x1a&.dfx.proto.meta.RetrieveByTypeResponse\"\x00\x12I\n\x06Update\x12\x1d.dfx.proto.meta.UpdateRequest\x1a\x1e.dfx.proto.meta.UpdateResponse\"\x00\x12[\n\x0cUpdateByType\x12#.dfx.proto.meta.UpdateByTypeRequest\x1a$.dfx.proto.meta.UpdateByTypeResponse\"\x00\x42\x1b\n\x10\x61i.nuralogix.dfxB\x04Meta\xf8\x01\x01\x62\x06proto3'
 )
 
@@ -30,6 +31,7 @@ _UPDATEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Namespace', full_name='dfx.proto.meta.UpdateRequest.ParamValues.Namespace', index=0,
@@ -37,7 +39,7 @@ _UPDATEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -60,6 +62,7 @@ _UPDATEREQUEST_VALUESENTRY = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='key', full_name='dfx.proto.meta.UpdateRequest.ValuesEntry.key', index=0,
@@ -67,14 +70,14 @@ _UPDATEREQUEST_VALUESENTRY = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='dfx.proto.meta.UpdateRequest.ValuesEntry.value', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -97,6 +100,7 @@ _UPDATEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.meta.UpdateRequest.Params', index=0,
@@ -104,14 +108,14 @@ _UPDATEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.meta.UpdateRequest.Values', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -135,6 +139,7 @@ _UPDATERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -159,6 +164,7 @@ _RETRIEVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Namespace', full_name='dfx.proto.meta.RetrieveRequest.ParamValues.Namespace', index=0,
@@ -166,7 +172,7 @@ _RETRIEVEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -189,6 +195,7 @@ _RETRIEVEREQUEST_QUERYVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Fields', full_name='dfx.proto.meta.RetrieveRequest.QueryValues.Fields', index=0,
@@ -196,7 +203,7 @@ _RETRIEVEREQUEST_QUERYVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -219,6 +226,7 @@ _RETRIEVEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.meta.RetrieveRequest.Params', index=0,
@@ -226,14 +234,14 @@ _RETRIEVEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Query', full_name='dfx.proto.meta.RetrieveRequest.Query', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -257,6 +265,7 @@ _RETRIEVERESPONSE_VALUESENTRY = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='key', full_name='dfx.proto.meta.RetrieveResponse.ValuesEntry.key', index=0,
@@ -264,14 +273,14 @@ _RETRIEVERESPONSE_VALUESENTRY = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='dfx.proto.meta.RetrieveResponse.ValuesEntry.value', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -294,6 +303,7 @@ _RETRIEVERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.meta.RetrieveResponse.Values', index=0,
@@ -301,7 +311,7 @@ _RETRIEVERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -325,6 +335,7 @@ _RETRIEVEBYTYPEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Type', full_name='dfx.proto.meta.RetrieveByTypeRequest.ParamValues.Type', index=0,
@@ -332,21 +343,21 @@ _RETRIEVEBYTYPEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.meta.RetrieveByTypeRequest.ParamValues.ID', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Namespace', full_name='dfx.proto.meta.RetrieveByTypeRequest.ParamValues.Namespace', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -369,6 +380,7 @@ _RETRIEVEBYTYPEREQUEST_QUERYVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Fields', full_name='dfx.proto.meta.RetrieveByTypeRequest.QueryValues.Fields', index=0,
@@ -376,7 +388,7 @@ _RETRIEVEBYTYPEREQUEST_QUERYVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -399,6 +411,7 @@ _RETRIEVEBYTYPEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.meta.RetrieveByTypeRequest.Params', index=0,
@@ -406,14 +419,14 @@ _RETRIEVEBYTYPEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Query', full_name='dfx.proto.meta.RetrieveByTypeRequest.Query', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -437,6 +450,7 @@ _RETRIEVEBYTYPERESPONSE_VALUESENTRY = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='key', full_name='dfx.proto.meta.RetrieveByTypeResponse.ValuesEntry.key', index=0,
@@ -444,14 +458,14 @@ _RETRIEVEBYTYPERESPONSE_VALUESENTRY = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='dfx.proto.meta.RetrieveByTypeResponse.ValuesEntry.value', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -474,6 +488,7 @@ _RETRIEVEBYTYPERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.meta.RetrieveByTypeResponse.Values', index=0,
@@ -481,7 +496,7 @@ _RETRIEVEBYTYPERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -505,6 +520,7 @@ _UPDATEBYTYPEREQUEST_PARAMVALUES = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Type', full_name='dfx.proto.meta.UpdateByTypeRequest.ParamValues.Type', index=0,
@@ -512,21 +528,21 @@ _UPDATEBYTYPEREQUEST_PARAMVALUES = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='ID', full_name='dfx.proto.meta.UpdateByTypeRequest.ParamValues.ID', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Namespace', full_name='dfx.proto.meta.UpdateByTypeRequest.ParamValues.Namespace', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -549,6 +565,7 @@ _UPDATEBYTYPEREQUEST_VALUESENTRY = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='key', full_name='dfx.proto.meta.UpdateByTypeRequest.ValuesEntry.key', index=0,
@@ -556,14 +573,14 @@ _UPDATEBYTYPEREQUEST_VALUESENTRY = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='value', full_name='dfx.proto.meta.UpdateByTypeRequest.ValuesEntry.value', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -586,6 +603,7 @@ _UPDATEBYTYPEREQUEST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Params', full_name='dfx.proto.meta.UpdateByTypeRequest.Params', index=0,
@@ -593,14 +611,14 @@ _UPDATEBYTYPEREQUEST = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Values', full_name='dfx.proto.meta.UpdateByTypeRequest.Values', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -624,6 +642,7 @@ _UPDATEBYTYPERESPONSE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -820,6 +839,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_start=1278,
   serialized_end=1636,
   methods=[
@@ -831,6 +851,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_RETRIEVEREQUEST,
     output_type=_RETRIEVERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='RetrieveByType',
@@ -840,6 +861,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_RETRIEVEBYTYPEREQUEST,
     output_type=_RETRIEVEBYTYPERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='Update',
@@ -849,6 +871,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_UPDATEREQUEST,
     output_type=_UPDATERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
     name='UpdateByType',
@@ -858,6 +881,7 @@ _SERVICES = _descriptor.ServiceDescriptor(
     input_type=_UPDATEBYTYPEREQUEST,
     output_type=_UPDATEBYTYPERESPONSE,
     serialized_options=None,
+    create_key=_descriptor._internal_create_key,
   ),
 ])
 _sym_db.RegisterServiceDescriptor(_SERVICES)
