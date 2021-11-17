@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='dfx-apiv2-protos',
-    version='2.21.3',
+    version='2.24.0',
     packages=['dfx_apiv2_protos'],
     install_requires=['protobuf>=3.12'],
     setup_requires=['wheel'],

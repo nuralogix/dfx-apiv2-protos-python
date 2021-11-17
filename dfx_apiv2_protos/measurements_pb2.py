@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\020ai.nuralogix.dfxB\014Measurements\370\001\001',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x12measurements.proto\x12\x16\x64\x66x.proto.measurements\x1a\x1cgoogle/protobuf/struct.proto\"\x92\x01\n\rCreateRequest\x12\x0f\n\x07StudyID\x18\x01 \x01(\t\x12\x12\n\nResolution\x18\x02 \x01(\r\x12\x15\n\rUserProfileID\x18\x03 \x01(\t\x12\x15\n\rDeviceVersion\x18\x04 \x01(\t\x12\r\n\x05Notes\x18\x05 \x01(\t\x12\x0c\n\x04Mode\x18\x06 \x01(\t\x12\x11\n\tPartnerID\x18\x07 \x01(\t\"\x1c\n\x0e\x43reateResponse\x12\n\n\x02ID\x18\x01 \x01(\t\"\xd4\x01\n\x0bListRequest\x12>\n\x05Query\x18\x01 \x01(\x0b\x32/.dfx.proto.measurements.ListRequest.QueryValues\x1a\x84\x01\n\x0bQueryValues\x12\x10\n\x08StatusID\x18\x01 \x01(\t\x12\x0c\n\x04\x44\x61te\x18\x02 \x01(\t\x12\x0f\n\x07\x45ndDate\x18\x03 \x01(\t\x12\r\n\x05Limit\x18\x04 \x01(\r\x12\x0e\n\x06Offset\x18\x05 \x01(\r\x12\x17\n\x0fUserProfileName\x18\x06 \x01(\t\x12\x0c\n\x04Mode\x18\x07 \x01(\t\"\xbc\x02\n\x0cListResponse\x12@\n\x06Values\x18\x01 \x03(\x0b\x32\x30.dfx.proto.measurements.ListResponse.Measurement\x1a\xe9\x01\n\x0bMeasurement\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0e\n\x06UserID\x18\x02 \x01(\t\x12\x15\n\rUserProfileID\x18\x03 \x01(\t\x12\x10\n\x08\x44\x65viceID\x18\x04 \x01(\t\x12\x0f\n\x07StudyID\x18\x05 \x01(\t\x12\x10\n\x08StatusID\x18\x06 \x01(\t\x12\x15\n\rDeviceVersion\x18\x07 \x01(\t\x12\x0f\n\x07\x43reated\x18\x08 \x01(\r\x12\x0f\n\x07Updated\x18\t \x01(\r\x12\x12\n\nTotalCount\x18\n \x01(\r\x12\x17\n\x0fUserProfileName\x18\x0b \x01(\t\x12\x0c\n\x04Mode\x18\x0c \x01(\t\"\x88\x01\n\x0fRetrieveRequest\x12\x43\n\x06Params\x18\x01 \x01(\x0b\x32\x33.dfx.proto.measurements.RetrieveRequest.ParamValues\x1a\x30\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x15\n\rExpandResults\x18\x02 \x01(\x08\"\x95\x02\n\x10RetrieveResponse\x12\x0f\n\x07StudyID\x18\x01 \x01(\t\x12\x10\n\x08StatusID\x18\x02 \x01(\t\x12\x15\n\rDeviceVersion\x18\x03 \x01(\t\x12&\n\x05\x46iles\x18\x04 \x01(\x0b\x32\x17.google.protobuf.Struct\x12(\n\x07Results\x18\x05 \x01(\x0b\x32\x17.google.protobuf.Struct\x12\x0f\n\x07\x43reated\x18\x06 \x01(\r\x12\x0f\n\x07Updated\x18\x07 \x01(\r\x12\n\n\x02ID\x18\x08 \x01(\t\x12\x10\n\x08UserName\x18\t \x01(\t\x12\x17\n\x0fUserProfileName\x18\n \x01(\t\x12\x0c\n\x04Mode\x18\x0b \x01(\t\x12\x0e\n\x06Region\x18\x0c \x01(\t\"\xe2\x01\n\x0b\x44\x61taRequest\x12?\n\x06Params\x18\x01 \x01(\x0b\x32/.dfx.proto.measurements.DataRequest.ParamValues\x12\x0e\n\x06\x41\x63tion\x18\x02 \x01(\t\x12\x12\n\nChunkOrder\x18\x03 \x01(\r\x12\x11\n\tStartTime\x18\x04 \x01(\x04\x12\x0f\n\x07\x45ndTime\x18\x05 \x01(\x04\x12\x10\n\x08\x44uration\x18\x06 \x01(\x02\x12\x0f\n\x07Payload\x18\x07 \x01(\x0c\x12\x0c\n\x04Meta\x18\x08 \x01(\x0c\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\".\n\x0c\x44\x61taResponse\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x12\n\nChunkOrder\x18\x02 \x01(\r\"\xaa\x03\n\x15ResultsStreamResponse\x12K\n\x07Results\x18\x01 \x03(\x0b\x32:.dfx.proto.measurements.ResultsStreamResponse.ResultsEntry\x1a\xdf\x01\n\x04\x46\x61\x63\x65\x12P\n\x07Results\x18\x01 \x03(\x0b\x32?.dfx.proto.measurements.ResultsStreamResponse.Face.ResultsEntry\x1a\x1a\n\x06Result\x12\x10\n\x04\x44\x61ta\x18\x01 \x03(\x02\x42\x02\x10\x01\x1ai\n\x0cResultsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12H\n\x05value\x18\x02 \x01(\x0b\x32\x39.dfx.proto.measurements.ResultsStreamResponse.Face.Result:\x02\x38\x01\x1a\x62\n\x0cResultsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x41\n\x05value\x18\x02 \x01(\x0b\x32\x32.dfx.proto.measurements.ResultsStreamResponse.Face:\x02\x38\x01\"m\n\rRemoveRequest\x12\x41\n\x06Params\x18\x01 \x01(\x0b\x32\x31.dfx.proto.measurements.RemoveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eRemoveResponse\"k\n\x0cResetRequest\x12@\n\x06Params\x18\x01 \x01(\x0b\x32\x30.dfx.proto.measurements.ResetRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x0f\n\rResetResponse\"k\n\x0c\x46ilesRequest\x12@\n\x06Params\x18\x01 \x01(\x0b\x32\x30.dfx.proto.measurements.FilesRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\xf6\x01\n\rFilesResponse\x12:\n\x06Values\x18\x01 \x03(\x0b\x32*.dfx.proto.measurements.FilesResponse.File\x1a\xa8\x01\n\x04\x46ile\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementDataID\x18\x02 \x01(\t\x12\x12\n\nMimeTypeID\x18\x03 \x01(\t\x12\x0b\n\x03URI\x18\x04 \x01(\t\x12\x10\n\x08\x43hecksum\x18\x05 \x01(\t\x12\x15\n\rStorageVolume\x18\x06 \x01(\t\x12\x0c\n\x04Size\x18\x07 \x01(\r\x12\x10\n\x08\x43omputed\x18\x08 \x01(\x08\x12\x0f\n\x07\x43reated\x18\t \x01(\r\"\x99\x02\n\x0e\x41\x64\x64\x46ileRequest\x12\x0e\n\x06\x46ileID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementDataID\x18\x02 \x01(\t\x12\x12\n\nMimeTypeID\x18\x03 \x01(\t\x12\x0b\n\x03URI\x18\x04 \x01(\t\x12\x10\n\x08\x43hecksum\x18\x05 \x01(\t\x12\x0c\n\x04Size\x18\x06 \x01(\x05\x12\x10\n\x08\x43omputed\x18\x07 \x01(\x08\x12\x0f\n\x07Storage\x18\x08 \x01(\t\x12\x42\n\x06Params\x18\t \x01(\x0b\x32\x32.dfx.proto.measurements.AddFileRequest.ParamValues\x1a\x34\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementDataID\x18\x02 \x01(\t\"-\n\x0f\x41\x64\x64\x46ileResponse\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0e\n\x06\x46ileID\x18\x02 \x01(\t\"\x90\x01\n\x11RemoveFileRequest\x12\x45\n\x06Params\x18\x01 \x01(\x0b\x32\x35.dfx.proto.measurements.RemoveFileRequest.ParamValues\x1a\x34\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementFileID\x18\x02 \x01(\t\"\x14\n\x12RemoveFileResponse\"o\n\x0eResultsRequest\x12\x42\n\x06Params\x18\x01 \x01(\x0b\x32\x32.dfx.proto.measurements.ResultsRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\";\n\x0fResultsResponse\x12(\n\x07Results\x18\x01 \x01(\x0b\x32\x17.google.protobuf.Struct\"\x94\x01\n\x17SubscribeResultsRequest\x12K\n\x06Params\x18\x01 \x01(\x0b\x32;.dfx.proto.measurements.SubscribeResultsRequest.ParamValues\x12\x11\n\tRequestID\x18\x02 \x01(\t\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x1a\n\x18SubscribeResultsResponse\"C\n\x19SubscribeReprocessRequest\x12\x15\n\rMeasurementID\x18\x01 \x01(\t\x12\x0f\n\x07StudyID\x18\x02 \x01(\t\"\x1c\n\x1aSubscribeReprocessResponse2\x96\x08\n\x08Services\x12Y\n\x06\x43reate\x12%.dfx.proto.measurements.CreateRequest\x1a&.dfx.proto.measurements.CreateResponse\"\x00\x12S\n\x04List\x12#.dfx.proto.measurements.ListRequest\x1a$.dfx.proto.measurements.ListResponse\"\x00\x12_\n\x08Retrieve\x12\'.dfx.proto.measurements.RetrieveRequest\x1a(.dfx.proto.measurements.RetrieveResponse\"\x00\x12S\n\x04\x44\x61ta\x12#.dfx.proto.measurements.DataRequest\x1a$.dfx.proto.measurements.DataResponse\"\x00\x12V\n\x05Reset\x12$.dfx.proto.measurements.ResetRequest\x1a%.dfx.proto.measurements.ResetResponse\"\x00\x12Y\n\x06Remove\x12%.dfx.proto.measurements.RemoveRequest\x1a&.dfx.proto.measurements.RemoveResponse\"\x00\x12\\\n\x07Results\x12&.dfx.proto.measurements.ResultsRequest\x1a\'.dfx.proto.measurements.ResultsResponse\"\x00\x12V\n\x05\x46iles\x12$.dfx.proto.measurements.FilesRequest\x1a%.dfx.proto.measurements.FilesResponse\"\x00\x12\\\n\x07\x41\x64\x64\x46ile\x12&.dfx.proto.measurements.AddFileRequest\x1a\'.dfx.proto.measurements.AddFileResponse\"\x00\x12\x64\n\nRemoveFile\x12).dfx.proto.measurements.RemoveFileRequest\x1a).dfx.proto.measurements.RemoveFileRequest\"\x00\x12w\n\x10SubscribeResults\x12/.dfx.proto.measurements.SubscribeResultsRequest\x1a\x30.dfx.proto.measurements.SubscribeResultsResponse\"\x00\x42#\n\x10\x61i.nuralogix.dfxB\x0cMeasurements\xf8\x01\x01\x62\x06proto3'
+  serialized_pb=b'\n\x12measurements.proto\x12\x16\x64\x66x.proto.measurements\x1a\x1cgoogle/protobuf/struct.proto\"\x92\x01\n\rCreateRequest\x12\x0f\n\x07StudyID\x18\x01 \x01(\t\x12\x12\n\nResolution\x18\x02 \x01(\r\x12\x15\n\rUserProfileID\x18\x03 \x01(\t\x12\x15\n\rDeviceVersion\x18\x04 \x01(\t\x12\r\n\x05Notes\x18\x05 \x01(\t\x12\x0c\n\x04Mode\x18\x06 \x01(\t\x12\x11\n\tPartnerID\x18\x07 \x01(\t\"\x1c\n\x0e\x43reateResponse\x12\n\n\x02ID\x18\x01 \x01(\t\"\xd4\x01\n\x0bListRequest\x12>\n\x05Query\x18\x01 \x01(\x0b\x32/.dfx.proto.measurements.ListRequest.QueryValues\x1a\x84\x01\n\x0bQueryValues\x12\x10\n\x08StatusID\x18\x01 \x01(\t\x12\x0c\n\x04\x44\x61te\x18\x02 \x01(\t\x12\x0f\n\x07\x45ndDate\x18\x03 \x01(\t\x12\r\n\x05Limit\x18\x04 \x01(\r\x12\x0e\n\x06Offset\x18\x05 \x01(\r\x12\x17\n\x0fUserProfileName\x18\x06 \x01(\t\x12\x0c\n\x04Mode\x18\x07 \x01(\t\"\xbc\x02\n\x0cListResponse\x12@\n\x06Values\x18\x01 \x03(\x0b\x32\x30.dfx.proto.measurements.ListResponse.Measurement\x1a\xe9\x01\n\x0bMeasurement\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0e\n\x06UserID\x18\x02 \x01(\t\x12\x15\n\rUserProfileID\x18\x03 \x01(\t\x12\x10\n\x08\x44\x65viceID\x18\x04 \x01(\t\x12\x0f\n\x07StudyID\x18\x05 \x01(\t\x12\x10\n\x08StatusID\x18\x06 \x01(\t\x12\x15\n\rDeviceVersion\x18\x07 \x01(\t\x12\x0f\n\x07\x43reated\x18\x08 \x01(\r\x12\x0f\n\x07Updated\x18\t \x01(\r\x12\x12\n\nTotalCount\x18\n \x01(\r\x12\x17\n\x0fUserProfileName\x18\x0b \x01(\t\x12\x0c\n\x04Mode\x18\x0c \x01(\t\"\x88\x01\n\x0fRetrieveRequest\x12\x43\n\x06Params\x18\x01 \x01(\x0b\x32\x33.dfx.proto.measurements.RetrieveRequest.ParamValues\x1a\x30\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x15\n\rExpandResults\x18\x02 \x01(\x08\"\x95\x02\n\x10RetrieveResponse\x12\x0f\n\x07StudyID\x18\x01 \x01(\t\x12\x10\n\x08StatusID\x18\x02 \x01(\t\x12\x15\n\rDeviceVersion\x18\x03 \x01(\t\x12&\n\x05\x46iles\x18\x04 \x01(\x0b\x32\x17.google.protobuf.Struct\x12(\n\x07Results\x18\x05 \x01(\x0b\x32\x17.google.protobuf.Struct\x12\x0f\n\x07\x43reated\x18\x06 \x01(\r\x12\x0f\n\x07Updated\x18\x07 \x01(\r\x12\n\n\x02ID\x18\x08 \x01(\t\x12\x10\n\x08UserName\x18\t \x01(\t\x12\x17\n\x0fUserProfileName\x18\n \x01(\t\x12\x0c\n\x04Mode\x18\x0b \x01(\t\x12\x0e\n\x06Region\x18\x0c \x01(\t\"\xe2\x01\n\x0b\x44\x61taRequest\x12?\n\x06Params\x18\x01 \x01(\x0b\x32/.dfx.proto.measurements.DataRequest.ParamValues\x12\x0e\n\x06\x41\x63tion\x18\x02 \x01(\t\x12\x12\n\nChunkOrder\x18\x03 \x01(\r\x12\x11\n\tStartTime\x18\x04 \x01(\x04\x12\x0f\n\x07\x45ndTime\x18\x05 \x01(\x04\x12\x10\n\x08\x44uration\x18\x06 \x01(\x02\x12\x0f\n\x07Payload\x18\x07 \x01(\x0c\x12\x0c\n\x04Meta\x18\x08 \x01(\x0c\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\".\n\x0c\x44\x61taResponse\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x12\n\nChunkOrder\x18\x02 \x01(\r\"\xaa\x03\n\x15ResultsStreamResponse\x12K\n\x07Results\x18\x01 \x03(\x0b\x32:.dfx.proto.measurements.ResultsStreamResponse.ResultsEntry\x1a\xdf\x01\n\x04\x46\x61\x63\x65\x12P\n\x07Results\x18\x01 \x03(\x0b\x32?.dfx.proto.measurements.ResultsStreamResponse.Face.ResultsEntry\x1a\x1a\n\x06Result\x12\x10\n\x04\x44\x61ta\x18\x01 \x03(\x02\x42\x02\x10\x01\x1ai\n\x0cResultsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12H\n\x05value\x18\x02 \x01(\x0b\x32\x39.dfx.proto.measurements.ResultsStreamResponse.Face.Result:\x02\x38\x01\x1a\x62\n\x0cResultsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x41\n\x05value\x18\x02 \x01(\x0b\x32\x32.dfx.proto.measurements.ResultsStreamResponse.Face:\x02\x38\x01\"m\n\rRemoveRequest\x12\x41\n\x06Params\x18\x01 \x01(\x0b\x32\x31.dfx.proto.measurements.RemoveRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x10\n\x0eRemoveResponse\"k\n\x0cResetRequest\x12@\n\x06Params\x18\x01 \x01(\x0b\x32\x30.dfx.proto.measurements.ResetRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\x0f\n\rResetResponse\"k\n\x0c\x46ilesRequest\x12@\n\x06Params\x18\x01 \x01(\x0b\x32\x30.dfx.proto.measurements.FilesRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\xf6\x01\n\rFilesResponse\x12:\n\x06Values\x18\x01 \x03(\x0b\x32*.dfx.proto.measurements.FilesResponse.File\x1a\xa8\x01\n\x04\x46ile\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementDataID\x18\x02 \x01(\t\x12\x12\n\nMimeTypeID\x18\x03 \x01(\t\x12\x0b\n\x03URI\x18\x04 \x01(\t\x12\x10\n\x08\x43hecksum\x18\x05 \x01(\t\x12\x15\n\rStorageVolume\x18\x06 \x01(\t\x12\x0c\n\x04Size\x18\x07 \x01(\r\x12\x10\n\x08\x43omputed\x18\x08 \x01(\x08\x12\x0f\n\x07\x43reated\x18\t \x01(\r\"\x99\x02\n\x0e\x41\x64\x64\x46ileRequest\x12\x0e\n\x06\x46ileID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementDataID\x18\x02 \x01(\t\x12\x12\n\nMimeTypeID\x18\x03 \x01(\t\x12\x0b\n\x03URI\x18\x04 \x01(\t\x12\x10\n\x08\x43hecksum\x18\x05 \x01(\t\x12\x0c\n\x04Size\x18\x06 \x01(\x05\x12\x10\n\x08\x43omputed\x18\x07 \x01(\x08\x12\x0f\n\x07Storage\x18\x08 \x01(\t\x12\x42\n\x06Params\x18\t \x01(\x0b\x32\x32.dfx.proto.measurements.AddFileRequest.ParamValues\x1a\x34\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementDataID\x18\x02 \x01(\t\"-\n\x0f\x41\x64\x64\x46ileResponse\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0e\n\x06\x46ileID\x18\x02 \x01(\t\"\x90\x01\n\x11RemoveFileRequest\x12\x45\n\x06Params\x18\x01 \x01(\x0b\x32\x35.dfx.proto.measurements.RemoveFileRequest.ParamValues\x1a\x34\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementFileID\x18\x02 \x01(\t\"\x14\n\x12RemoveFileResponse\"o\n\x0eResultsRequest\x12\x42\n\x06Params\x18\x01 \x01(\x0b\x32\x32.dfx.proto.measurements.ResultsRequest.ParamValues\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\";\n\x0fResultsResponse\x12(\n\x07Results\x18\x01 \x01(\x0b\x32\x17.google.protobuf.Struct\"\x94\x01\n\x17SubscribeResultsRequest\x12K\n\x06Params\x18\x01 \x01(\x0b\x32;.dfx.proto.measurements.SubscribeResultsRequest.ParamValues\x12\x11\n\tRequestID\x18\x02 \x01(\t\x1a\x19\n\x0bParamValues\x12\n\n\x02ID\x18\x01 \x01(\t\"\xc7\x01\n\x05\x45rror\x12\x0c\n\x04\x43ode\x18\x01 \x01(\t\x12\x39\n\x06\x45rrors\x18\x02 \x03(\x0b\x32).dfx.proto.measurements.Error.ErrorsEntry\x1a\x1b\n\x0b\x44\x65scription\x12\x0c\n\x04msgs\x18\x01 \x03(\t\x1aX\n\x0b\x45rrorsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x38\n\x05value\x18\x02 \x01(\x0b\x32).dfx.proto.measurements.Error.Description:\x02\x38\x01\"\x96\x03\n\x18SubscribeResultsResponse\x12\x15\n\rMeasurementID\x18\x01 \x01(\t\x12\x19\n\x11MeasurementDataID\x18\x02 \x01(\t\x12\x1b\n\x13MeasurementResultID\x18\x03 \x01(\t\x12\x12\n\nMultiplier\x18\x04 \x01(\r\x12P\n\x08\x43hannels\x18\x05 \x03(\x0b\x32>.dfx.proto.measurements.SubscribeResultsResponse.ChannelsEntry\x12,\n\x05\x45rror\x18\x06 \x01(\x0b\x32\x1d.dfx.proto.measurements.Error\x1a,\n\x07\x43hannel\x12\x10\n\x04\x44\x61ta\x18\x01 \x03(\x11\x42\x02\x10\x01\x12\x0f\n\x07\x43hannel\x18\x02 \x01(\t\x1ai\n\rChannelsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12G\n\x05value\x18\x02 \x01(\x0b\x32\x38.dfx.proto.measurements.SubscribeResultsResponse.Channel:\x02\x38\x01\"C\n\x19SubscribeReprocessRequest\x12\x15\n\rMeasurementID\x18\x01 \x01(\t\x12\x0f\n\x07StudyID\x18\x02 \x01(\t\"\x1c\n\x1aSubscribeReprocessResponse2\x96\x08\n\x08Services\x12Y\n\x06\x43reate\x12%.dfx.proto.measurements.CreateRequest\x1a&.dfx.proto.measurements.CreateResponse\"\x00\x12S\n\x04List\x12#.dfx.proto.measurements.ListRequest\x1a$.dfx.proto.measurements.ListResponse\"\x00\x12_\n\x08Retrieve\x12\'.dfx.proto.measurements.RetrieveRequest\x1a(.dfx.proto.measurements.RetrieveResponse\"\x00\x12S\n\x04\x44\x61ta\x12#.dfx.proto.measurements.DataRequest\x1a$.dfx.proto.measurements.DataResponse\"\x00\x12V\n\x05Reset\x12$.dfx.proto.measurements.ResetRequest\x1a%.dfx.proto.measurements.ResetResponse\"\x00\x12Y\n\x06Remove\x12%.dfx.proto.measurements.RemoveRequest\x1a&.dfx.proto.measurements.RemoveResponse\"\x00\x12\\\n\x07Results\x12&.dfx.proto.measurements.ResultsRequest\x1a\'.dfx.proto.measurements.ResultsResponse\"\x00\x12V\n\x05\x46iles\x12$.dfx.proto.measurements.FilesRequest\x1a%.dfx.proto.measurements.FilesResponse\"\x00\x12\\\n\x07\x41\x64\x64\x46ile\x12&.dfx.proto.measurements.AddFileRequest\x1a\'.dfx.proto.measurements.AddFileResponse\"\x00\x12\x64\n\nRemoveFile\x12).dfx.proto.measurements.RemoveFileRequest\x1a).dfx.proto.measurements.RemoveFileRequest\"\x00\x12w\n\x10SubscribeResults\x12/.dfx.proto.measurements.SubscribeResultsRequest\x1a\x30.dfx.proto.measurements.SubscribeResultsResponse\"\x00\x42#\n\x10\x61i.nuralogix.dfxB\x0cMeasurements\xf8\x01\x01\x62\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,])
 
@@ -1661,14 +1661,21 @@ _SUBSCRIBERESULTSREQUEST = _descriptor.Descriptor(
 )
 
 
-_SUBSCRIBERESULTSRESPONSE = _descriptor.Descriptor(
-  name='SubscribeResultsResponse',
-  full_name='dfx.proto.measurements.SubscribeResultsResponse',
+_ERROR_DESCRIPTION = _descriptor.Descriptor(
+  name='Description',
+  full_name='dfx.proto.measurements.Error.Description',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
+    _descriptor.FieldDescriptor(
+      name='msgs', full_name='dfx.proto.measurements.Error.Description.msgs', index=0,
+      number=1, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1681,8 +1688,227 @@ _SUBSCRIBERESULTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3352,
-  serialized_end=3378,
+  serialized_start=3435,
+  serialized_end=3462,
+)
+
+_ERROR_ERRORSENTRY = _descriptor.Descriptor(
+  name='ErrorsEntry',
+  full_name='dfx.proto.measurements.Error.ErrorsEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='dfx.proto.measurements.Error.ErrorsEntry.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='dfx.proto.measurements.Error.ErrorsEntry.value', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=b'8\001',
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3464,
+  serialized_end=3552,
+)
+
+_ERROR = _descriptor.Descriptor(
+  name='Error',
+  full_name='dfx.proto.measurements.Error',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Code', full_name='dfx.proto.measurements.Error.Code', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Errors', full_name='dfx.proto.measurements.Error.Errors', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[_ERROR_DESCRIPTION, _ERROR_ERRORSENTRY, ],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3353,
+  serialized_end=3552,
+)
+
+
+_SUBSCRIBERESULTSRESPONSE_CHANNEL = _descriptor.Descriptor(
+  name='Channel',
+  full_name='dfx.proto.measurements.SubscribeResultsResponse.Channel',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Data', full_name='dfx.proto.measurements.SubscribeResultsResponse.Channel.Data', index=0,
+      number=1, type=17, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\020\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Channel', full_name='dfx.proto.measurements.SubscribeResultsResponse.Channel.Channel', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3810,
+  serialized_end=3854,
+)
+
+_SUBSCRIBERESULTSRESPONSE_CHANNELSENTRY = _descriptor.Descriptor(
+  name='ChannelsEntry',
+  full_name='dfx.proto.measurements.SubscribeResultsResponse.ChannelsEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='dfx.proto.measurements.SubscribeResultsResponse.ChannelsEntry.key', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='dfx.proto.measurements.SubscribeResultsResponse.ChannelsEntry.value', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=b'8\001',
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3856,
+  serialized_end=3961,
+)
+
+_SUBSCRIBERESULTSRESPONSE = _descriptor.Descriptor(
+  name='SubscribeResultsResponse',
+  full_name='dfx.proto.measurements.SubscribeResultsResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='MeasurementID', full_name='dfx.proto.measurements.SubscribeResultsResponse.MeasurementID', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='MeasurementDataID', full_name='dfx.proto.measurements.SubscribeResultsResponse.MeasurementDataID', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='MeasurementResultID', full_name='dfx.proto.measurements.SubscribeResultsResponse.MeasurementResultID', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Multiplier', full_name='dfx.proto.measurements.SubscribeResultsResponse.Multiplier', index=3,
+      number=4, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Channels', full_name='dfx.proto.measurements.SubscribeResultsResponse.Channels', index=4,
+      number=5, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='Error', full_name='dfx.proto.measurements.SubscribeResultsResponse.Error', index=5,
+      number=6, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[_SUBSCRIBERESULTSRESPONSE_CHANNEL, _SUBSCRIBERESULTSRESPONSE_CHANNELSENTRY, ],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3555,
+  serialized_end=3961,
 )
 
 
@@ -1720,8 +1946,8 @@ _SUBSCRIBEREPROCESSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3380,
-  serialized_end=3447,
+  serialized_start=3963,
+  serialized_end=4030,
 )
 
 
@@ -1745,8 +1971,8 @@ _SUBSCRIBEREPROCESSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3449,
-  serialized_end=3477,
+  serialized_start=4032,
+  serialized_end=4060,
 )
 
 _LISTREQUEST_QUERYVALUES.containing_type = _LISTREQUEST
@@ -1784,6 +2010,15 @@ _RESULTSREQUEST.fields_by_name['Params'].message_type = _RESULTSREQUEST_PARAMVAL
 _RESULTSRESPONSE.fields_by_name['Results'].message_type = google_dot_protobuf_dot_struct__pb2._STRUCT
 _SUBSCRIBERESULTSREQUEST_PARAMVALUES.containing_type = _SUBSCRIBERESULTSREQUEST
 _SUBSCRIBERESULTSREQUEST.fields_by_name['Params'].message_type = _SUBSCRIBERESULTSREQUEST_PARAMVALUES
+_ERROR_DESCRIPTION.containing_type = _ERROR
+_ERROR_ERRORSENTRY.fields_by_name['value'].message_type = _ERROR_DESCRIPTION
+_ERROR_ERRORSENTRY.containing_type = _ERROR
+_ERROR.fields_by_name['Errors'].message_type = _ERROR_ERRORSENTRY
+_SUBSCRIBERESULTSRESPONSE_CHANNEL.containing_type = _SUBSCRIBERESULTSRESPONSE
+_SUBSCRIBERESULTSRESPONSE_CHANNELSENTRY.fields_by_name['value'].message_type = _SUBSCRIBERESULTSRESPONSE_CHANNEL
+_SUBSCRIBERESULTSRESPONSE_CHANNELSENTRY.containing_type = _SUBSCRIBERESULTSRESPONSE
+_SUBSCRIBERESULTSRESPONSE.fields_by_name['Channels'].message_type = _SUBSCRIBERESULTSRESPONSE_CHANNELSENTRY
+_SUBSCRIBERESULTSRESPONSE.fields_by_name['Error'].message_type = _ERROR
 DESCRIPTOR.message_types_by_name['CreateRequest'] = _CREATEREQUEST
 DESCRIPTOR.message_types_by_name['CreateResponse'] = _CREATERESPONSE
 DESCRIPTOR.message_types_by_name['ListRequest'] = _LISTREQUEST
@@ -1806,6 +2041,7 @@ DESCRIPTOR.message_types_by_name['RemoveFileResponse'] = _REMOVEFILERESPONSE
 DESCRIPTOR.message_types_by_name['ResultsRequest'] = _RESULTSREQUEST
 DESCRIPTOR.message_types_by_name['ResultsResponse'] = _RESULTSRESPONSE
 DESCRIPTOR.message_types_by_name['SubscribeResultsRequest'] = _SUBSCRIBERESULTSREQUEST
+DESCRIPTOR.message_types_by_name['Error'] = _ERROR
 DESCRIPTOR.message_types_by_name['SubscribeResultsResponse'] = _SUBSCRIBERESULTSRESPONSE
 DESCRIPTOR.message_types_by_name['SubscribeReprocessRequest'] = _SUBSCRIBEREPROCESSREQUEST
 DESCRIPTOR.message_types_by_name['SubscribeReprocessResponse'] = _SUBSCRIBEREPROCESSRESPONSE
@@ -2093,12 +2329,51 @@ SubscribeResultsRequest = _reflection.GeneratedProtocolMessageType('SubscribeRes
 _sym_db.RegisterMessage(SubscribeResultsRequest)
 _sym_db.RegisterMessage(SubscribeResultsRequest.ParamValues)
 
+Error = _reflection.GeneratedProtocolMessageType('Error', (_message.Message,), {
+
+  'Description' : _reflection.GeneratedProtocolMessageType('Description', (_message.Message,), {
+    'DESCRIPTOR' : _ERROR_DESCRIPTION,
+    '__module__' : 'measurements_pb2'
+    # @@protoc_insertion_point(class_scope:dfx.proto.measurements.Error.Description)
+    })
+  ,
+
+  'ErrorsEntry' : _reflection.GeneratedProtocolMessageType('ErrorsEntry', (_message.Message,), {
+    'DESCRIPTOR' : _ERROR_ERRORSENTRY,
+    '__module__' : 'measurements_pb2'
+    # @@protoc_insertion_point(class_scope:dfx.proto.measurements.Error.ErrorsEntry)
+    })
+  ,
+  'DESCRIPTOR' : _ERROR,
+  '__module__' : 'measurements_pb2'
+  # @@protoc_insertion_point(class_scope:dfx.proto.measurements.Error)
+  })
+_sym_db.RegisterMessage(Error)
+_sym_db.RegisterMessage(Error.Description)
+_sym_db.RegisterMessage(Error.ErrorsEntry)
+
 SubscribeResultsResponse = _reflection.GeneratedProtocolMessageType('SubscribeResultsResponse', (_message.Message,), {
+
+  'Channel' : _reflection.GeneratedProtocolMessageType('Channel', (_message.Message,), {
+    'DESCRIPTOR' : _SUBSCRIBERESULTSRESPONSE_CHANNEL,
+    '__module__' : 'measurements_pb2'
+    # @@protoc_insertion_point(class_scope:dfx.proto.measurements.SubscribeResultsResponse.Channel)
+    })
+  ,
+
+  'ChannelsEntry' : _reflection.GeneratedProtocolMessageType('ChannelsEntry', (_message.Message,), {
+    'DESCRIPTOR' : _SUBSCRIBERESULTSRESPONSE_CHANNELSENTRY,
+    '__module__' : 'measurements_pb2'
+    # @@protoc_insertion_point(class_scope:dfx.proto.measurements.SubscribeResultsResponse.ChannelsEntry)
+    })
+  ,
   'DESCRIPTOR' : _SUBSCRIBERESULTSRESPONSE,
   '__module__' : 'measurements_pb2'
   # @@protoc_insertion_point(class_scope:dfx.proto.measurements.SubscribeResultsResponse)
   })
 _sym_db.RegisterMessage(SubscribeResultsResponse)
+_sym_db.RegisterMessage(SubscribeResultsResponse.Channel)
+_sym_db.RegisterMessage(SubscribeResultsResponse.ChannelsEntry)
 
 SubscribeReprocessRequest = _reflection.GeneratedProtocolMessageType('SubscribeReprocessRequest', (_message.Message,), {
   'DESCRIPTOR' : _SUBSCRIBEREPROCESSREQUEST,
@@ -2119,6 +2394,9 @@ DESCRIPTOR._options = None
 _RESULTSSTREAMRESPONSE_FACE_RESULT.fields_by_name['Data']._options = None
 _RESULTSSTREAMRESPONSE_FACE_RESULTSENTRY._options = None
 _RESULTSSTREAMRESPONSE_RESULTSENTRY._options = None
+_ERROR_ERRORSENTRY._options = None
+_SUBSCRIBERESULTSRESPONSE_CHANNEL.fields_by_name['Data']._options = None
+_SUBSCRIBERESULTSRESPONSE_CHANNELSENTRY._options = None
 
 _SERVICES = _descriptor.ServiceDescriptor(
   name='Services',
@@ -2127,8 +2405,8 @@ _SERVICES = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=3480,
-  serialized_end=4526,
+  serialized_start=4063,
+  serialized_end=5109,
   methods=[
   _descriptor.MethodDescriptor(
     name='Create',
