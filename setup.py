@@ -10,7 +10,6 @@ setup(
     install_requires=['protobuf>=3.12,<4'],
     setup_requires=['wheel'],
     description='dfx-apiv2-protos are compiled Python protos for the Nuralogix DeepAffex API.',
-    readme="README.md",
     license_file='LICENSE.txt',
     classifiers=[
         "Programming Language :: Python :: 3",
