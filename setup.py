@@ -9,6 +9,7 @@ long_description = (pathlib.Path(__file__).parent / "README.md").read_text()
 setup(
     name='dfx-apiv2-protos',
     author="NuraLogix Corporation",
+    url='https://github.com/nuralogix/dfx-apiv2-protos-python',
     version=__version__,
     packages=['dfx_apiv2_protos'],
     install_requires=['protobuf>=3.12,<4'],
