@@ -15,7 +15,7 @@ setup(
     setup_requires=['wheel'],
     description='dfx-apiv2-protos are compiled Python protos for the Nuralogix DeepAffex API.',
     long_description=long_description,
-    long_description_content_type='text/x-markdown',
+    long_description_content_type='text/markdown',
     license_file='LICENSE.txt',
     classifiers=[
         "Programming Language :: Python :: 3",
